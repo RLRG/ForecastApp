@@ -1,0 +1,18 @@
+branches:
+  only:
+    - develop
+language: swift
+osx_image: xcode9.3
+before_install:
+  - rvm use $RVM_RUBY_VERSION
+  - gem install cocoapods
+  - gem install xcpretty -N
+  - brew update
+  - brew install swiftlint || true
+  - pod repo update
+  - pod install
+
+script:
+  - set -o pipefail
+  - travis_wait xcodebuild -workspace ForecastApp.xcworkspace -scheme ForecastApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
+  - swiftlint
