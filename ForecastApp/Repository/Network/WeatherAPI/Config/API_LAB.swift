@@ -7,3 +7,12 @@
 //
 
 import Foundation
+
+/**
+ API
+ 
+ This struct provide the endpoint URL for the Weather API for the testing LAB environment. For now, it will be the same as the production environment endpoint.
+ */
+struct API {
+    static let endpoint = "api.openweathermap.org/data/2.5/"
+}

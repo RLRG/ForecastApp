@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import RxSwift
+
+/**
+ ServerProviderProtocol
+ 
+ List of methods provided by the server that the app is able to call to get the data of the system.
+ */
+protocol ServerProviderProtocol {
+    func getWeatherForecast(withName name: String?, withLat lat: Double, withLon lon: Double) -> Observable<WeatherResult>
+}

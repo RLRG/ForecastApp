@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+/**
+Urls
+
+This struct lists all the web services offered by the server of the system. The struct provides the URL string for each specific web service for the Weather API.
+*/
+struct Urls {
+    
+    // MARK: - Weather
+    static let searchWeather = "forecast" // HTTP method: GET
+}
