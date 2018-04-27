@@ -82,6 +82,7 @@
 		371FF6A32093168D00B6E896 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6A12093168D00B6E896 /* MainVC.swift */; };
 		3F5A5C01D7B6D8E1509A491D /* Pods_ForecastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */; };
 		66686BF5CAAE59F292D01CF9 /* Pods_ForecastAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */; };
+		919F687560B5393E37CC8CB2 /* Pods_ForecastAppLAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,11 +141,14 @@
 		371FF69D2093166300B6E896 /* MainVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCTests.swift; sourceTree = "<group>"; };
 		371FF69F2093167900B6E896 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		371FF6A12093168D00B6E896 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.release.xcconfig"; sourceTree = "<group>"; };
+		5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.debug.xcconfig"; sourceTree = "<group>"; };
 		72416FF5F09C27E2CD9C4605 /* Pods-ForecastAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppTests/Pods-ForecastAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		7255BE87344AA1226F2D4E73 /* Pods-ForecastApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastApp/Pods-ForecastApp.release.xcconfig"; sourceTree = "<group>"; };
 		B67578FA07C19C7415A06561 /* Pods-ForecastAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppTests/Pods-ForecastAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C14A462AF2F1CB40642EF05F /* Pods-ForecastApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastApp/Pods-ForecastApp.debug.xcconfig"; sourceTree = "<group>"; };
+		D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastAppLAB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ForecastApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -169,6 +173,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				919F687560B5393E37CC8CB2 /* Pods_ForecastAppLAB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +187,8 @@
 				7255BE87344AA1226F2D4E73 /* Pods-ForecastApp.release.xcconfig */,
 				B67578FA07C19C7415A06561 /* Pods-ForecastAppTests.debug.xcconfig */,
 				72416FF5F09C27E2CD9C4605 /* Pods-ForecastAppTests.release.xcconfig */,
+				5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */,
+				55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -191,6 +198,7 @@
 			children = (
 				D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */,
 				B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */,
+				D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -534,9 +542,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 371FF6882093148C00B6E896 /* Build configuration list for PBXNativeTarget "ForecastAppLAB" */;
 			buildPhases = (
+				3A11DE009ECF3316C6593E42 /* [CP] Check Pods Manifest.lock */,
 				371FF6632093148C00B6E896 /* Sources */,
 				371FF6802093148C00B6E896 /* Frameworks */,
 				371FF6812093148C00B6E896 /* Resources */,
+				37FF3F27BDA341CAD44B2A74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -635,6 +645,62 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ForecastAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37FF3F27BDA341CAD44B2A74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A11DE009ECF3316C6593E42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ForecastAppLAB-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1023,6 +1089,7 @@
 		};
 		371FF6892093148C00B6E896 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -1038,6 +1105,7 @@
 		};
 		371FF68A2093148C00B6E896 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -33,3 +33,8 @@ target 'ForecastApp' do
         pod 'RxTest'
     end
 end
+
+target 'ForecastAppLAB' do
+    # In-app debugger
+    pod 'FLEX'
+end
