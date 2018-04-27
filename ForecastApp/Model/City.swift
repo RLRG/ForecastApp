@@ -1,5 +1,5 @@
 //
-//  Location.swift
+//  City.swift
 //  ForecastApp
 //
 //  Created by Rodrigo López-Romero Guijarro on 27/04/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Location {
-    let lat: Double
-    let lon: Double
+struct City {
+    let name: String
+    let timeRequested: Date
 }

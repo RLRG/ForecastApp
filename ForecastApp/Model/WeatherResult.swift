@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct WeatherResult {
+    let temperature: Float
+    let windSpeed: Float
+    let windDegrees: Float
+    let precipitation: Int
+    let weatherIcon: String
+    let city: City
+    let location: Location
+}
