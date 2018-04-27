@@ -59,7 +59,7 @@ This paragraph includes all the resources used to create this project, including
 | Resource | Description |
 | --- | --- |
 | [Realm/Jazzy](https://github.com/realm/jazzy) | Soulful docs for Swift & Objective-C. Framework used to generate documentation of the code. |
-| App icon and buttons | https://www.flaticon.com & https://makeappicon.com/ |
+| App icon and buttons | Icon made by Rami McMin from https://www.flaticon.com and all the sizes of the icon were generated with https://makeappicon.com/ |
 | [Realm database migrations](https://realm.io/docs/swift/latest/#migrations) | The procedure we need to follow in case the Realm database model changes. |
 
 ## 3. Future work & Improvements
