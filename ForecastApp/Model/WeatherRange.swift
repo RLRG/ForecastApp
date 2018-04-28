@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct WeatherRange {
+/**
+ TODO: Description
+ */
+public struct WeatherRange {
     let startingTime: Int // IMPROVEMENT: Convert to Date. Now it is in UNIX TIME
     let temperatureAverage: Float
     let temperatureMin: Float

@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct Location {
+/**
+ TODO: Description
+ */
+public struct Location {
     let lat: Double
     let lon: Double
 }

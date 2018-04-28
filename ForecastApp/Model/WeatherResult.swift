@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct WeatherResult {
+/**
+ TODO: Description
+ */
+public struct WeatherResult {
     let city: City
     let location: Location
     var weatherRanges: [WeatherRange]

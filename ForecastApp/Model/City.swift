@@ -8,7 +8,10 @@
 
 import Foundation
 
-struct City {
+/**
+ TODO: Description
+ */
+public struct City {
     let name: String
     let timeRequested: Date
 }
