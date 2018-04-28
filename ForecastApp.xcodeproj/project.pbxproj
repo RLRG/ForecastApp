@@ -86,6 +86,10 @@
 		371FF6D6209391CF00B6E896 /* SearchWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6D4209391CF00B6E896 /* SearchWeather.swift */; };
 		371FF6D8209394C000B6E896 /* WeatherRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6D7209394C000B6E896 /* WeatherRange.swift */; };
 		371FF6D9209394C000B6E896 /* WeatherRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6D7209394C000B6E896 /* WeatherRange.swift */; };
+		371FF6DB2095129D00B6E896 /* RMCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6DA2095129D00B6E896 /* RMCity.swift */; };
+		371FF6DC2095129D00B6E896 /* RMCity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6DA2095129D00B6E896 /* RMCity.swift */; };
+		371FF6DE209512AC00B6E896 /* RMWeatherRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */; };
+		371FF6DF209512AC00B6E896 /* RMWeatherRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */; };
 		3F5A5C01D7B6D8E1509A491D /* Pods_ForecastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */; };
 		66686BF5CAAE59F292D01CF9 /* Pods_ForecastAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */; };
 		919F687560B5393E37CC8CB2 /* Pods_ForecastAppLAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */; };
@@ -150,6 +154,8 @@
 		371FF6D020938EDD00B6E896 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		371FF6D4209391CF00B6E896 /* SearchWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWeather.swift; sourceTree = "<group>"; };
 		371FF6D7209394C000B6E896 /* WeatherRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRange.swift; sourceTree = "<group>"; };
+		371FF6DA2095129D00B6E896 /* RMCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCity.swift; sourceTree = "<group>"; };
+		371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMWeatherRange.swift; sourceTree = "<group>"; };
 		55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.release.xcconfig"; sourceTree = "<group>"; };
 		5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.debug.xcconfig"; sourceTree = "<group>"; };
 		72416FF5F09C27E2CD9C4605 /* Pods-ForecastAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppTests/Pods-ForecastAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -414,8 +420,10 @@
 		371FF63B20930FB600B6E896 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				371FF63D20930FE000B6E896 /* RMLocation.swift */,
 				371FF63F20930FF000B6E896 /* RMWeatherResult.swift */,
+				371FF63D20930FE000B6E896 /* RMLocation.swift */,
+				371FF6DA2095129D00B6E896 /* RMCity.swift */,
+				371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -814,6 +822,7 @@
 				371FF64F209310BD00B6E896 /* Constants.swift in Sources */,
 				371FF651209310CD00B6E896 /* UIMessages.swift in Sources */,
 				371FF64C2093104D00B6E896 /* UserDefaultsKeys.swift in Sources */,
+				371FF6DE209512AC00B6E896 /* RMWeatherRange.swift in Sources */,
 				371FF6612093146B00B6E896 /* SearchWeatherProtocol.swift in Sources */,
 				371FF6482093102C00B6E896 /* RealmExt.swift in Sources */,
 				371FF62F20930F0900B6E896 /* ServerProvider.swift in Sources */,
@@ -839,6 +848,7 @@
 				371FF62A20930E2300B6E896 /* Repository.swift in Sources */,
 				371FF63420930F4000B6E896 /* Urls.swift in Sources */,
 				371FF6D8209394C000B6E896 /* WeatherRange.swift in Sources */,
+				371FF6DB2095129D00B6E896 /* RMCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -864,6 +874,7 @@
 				371FF6662093148C00B6E896 /* API_LAB.swift in Sources */,
 				371FF6672093148C00B6E896 /* Constants.swift in Sources */,
 				371FF6682093148C00B6E896 /* UIMessages.swift in Sources */,
+				371FF6DF209512AC00B6E896 /* RMWeatherRange.swift in Sources */,
 				371FF6692093148C00B6E896 /* UserDefaultsKeys.swift in Sources */,
 				371FF66A2093148C00B6E896 /* SearchWeatherProtocol.swift in Sources */,
 				371FF66B2093148C00B6E896 /* RealmExt.swift in Sources */,
@@ -889,6 +900,7 @@
 				371FF67E2093148C00B6E896 /* Repository.swift in Sources */,
 				371FF67F2093148C00B6E896 /* Urls.swift in Sources */,
 				371FF6D9209394C000B6E896 /* WeatherRange.swift in Sources */,
+				371FF6DC2095129D00B6E896 /* RMCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

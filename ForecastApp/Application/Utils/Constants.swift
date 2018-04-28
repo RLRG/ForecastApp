@@ -7,3 +7,19 @@
 //
 
 import Foundation
+
+/**
+ Constants
+ 
+ It contains the constant values used in the main production code.
+ */
+struct Constants {
+    
+    /**
+     This struct includes general info about the app
+    */
+    struct AppInfo {
+        /// The main name for the Realm repository.
+        static let realmRepoName = "com.CleanArchitectureRxSwift.RealmRepo"
+    }
+}
