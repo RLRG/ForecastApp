@@ -29,7 +29,7 @@ class MainVC: UIViewController {
     private let disposeBag = DisposeBag()
     
     /// UIBarButtonItem used to display the in-app debugger
-    @IBOutlet weak var debuggerButton: UIBarButtonItem!
+    @IBOutlet weak var debuggerButton: UIButton!
     /// UIBarButtonItem used to refresh the weather information
     @IBOutlet weak var refreshButton: UIBarButtonItem!
     /// The name of the current city
@@ -87,9 +87,9 @@ class MainVC: UIViewController {
         
         // In-App Debugger
         #if ForecastAppLAB
-            debuggerButton.isEnabled = true
+            debuggerButton.isHidden = false
         #else
-            debuggerButton.isEnabled = false
+            debuggerButton.isHidden = true
         #endif
         
         setupViewStateObserver()
@@ -99,7 +99,7 @@ class MainVC: UIViewController {
      Display the FLEX in-app debugger when the target "ForecastAppLAB" is running
      - Parameter sender: The UIBarButtonItem caller of the action
     */
-    @IBAction func showFLEXDebugger(_ sender: UIBarButtonItem) {
+    @IBAction func showFLEXDebugger(_ sender: UIButton) {
         #if ForecastAppLAB
             FLEXManager.shared().showExplorer()
         #endif
