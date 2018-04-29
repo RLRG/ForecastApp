@@ -19,7 +19,7 @@ final class RMWeatherResult: Object {
     @objc dynamic var weatherResultID: String = ""
     @objc dynamic var city: RMCity!
     @objc dynamic var location: RMLocation!
-    var weatherRanges = List<RMWeatherRange>()
+    let weatherRanges = List<RMWeatherRange>()
     
     override class func primaryKey() -> String? {
         return "weatherResultID"
@@ -55,7 +55,7 @@ extension WeatherResult: RealmRepresentable {
             object.weatherResultID = weatherResultID
             object.city = city.asRealm()
             object.location = location.asRealm()
-            object.weatherRanges = tempRMWeatherRanges
+            object.weatherRanges.append(objectsIn: tempRMWeatherRanges)
         }
     }
 }

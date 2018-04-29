@@ -17,8 +17,8 @@ import Realm
  */
 final class RMLocation: Object {
     @objc dynamic var locationName: String = ""
-    @objc dynamic var lat: Double = 0
-    @objc dynamic var lon: Double = 0
+    @objc dynamic var lat: Double = 0.0
+    @objc dynamic var lon: Double = 0.0
     
     override class func primaryKey() -> String? {
         return "locationName"

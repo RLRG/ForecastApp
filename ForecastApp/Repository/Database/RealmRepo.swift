@@ -183,14 +183,14 @@ final class RealmRepo<T:RealmRepresentable>: AbstractRepository<T> where T == T.
     }
     
     /**
-     Function whose main purpose is to return the only (or first) row of the selected table.
+     Function whose main purpose is to return the last row of the selected table.
      - Returns: An Observable with an object of type 'T'.
      */
     override func query() -> Observable<T> {
         return Observable.create { observer in
             let realm = self.realm
             let objects = realm.objects(T.RealmType.self)
-            let object = objects.first?.asDomain()
+            let object = objects.last?.asDomain()
             if let object = object {
                 observer.on(.next(object))
             }
