@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AppDelegate Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/AppDelegate" class="dashAnchor"></a>
+    <a title="AppDelegate Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AppDelegate Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AbstractRepository.html">AbstractRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AlertsManager.html">AlertsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainPresenter.html">MainPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainVC.html">MainVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network.html">Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMCity.html">RMCity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMLocation.html">RMLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherRange.html">RMWeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherResult.html">RMWeatherResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RealmRepo.html">RealmRepo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RunLoopThreadScheduler.html">RunLoopThreadScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeather.html">SearchWeather</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeatherUseCase.html">SearchWeatherUseCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerProvider.html">ServerProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThreadTarget.html">ThreadTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UseCaseProvider.html">UseCaseProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeatherRangeCell.html">WeatherRangeCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MainViewState.html">MainViewState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Object.html">Object</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Observable.html">Observable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SortDescriptor.html">SortDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11ForecastApp14abstractMethods5NeverOyF">abstractMethod()</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DomainConvertibleType.html">DomainConvertibleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RealmRepresentable.html">RealmRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SearchWeatherProtocol.html">SearchWeatherProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ServerProviderProtocol.html">ServerProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UseCaseProviderProtocol.html">UseCaseProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WeatherRangeCellProtocol.html">WeatherRangeCellProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/City.html">City</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/AppInfo.html">– AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/TableViewCell.html">– TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Storyboard.html">– Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UIMessages.html">UIMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Urls.html">Urls</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11ForecastApp16UserDefaultsKeysV">UserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherRange.html">WeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherResult.html">WeatherResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AppDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@UIApplicationMain</span>
+<span class="kd">class</span> <span class="kt">AppDelegate</span> <span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">UIApplicationDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <h1 id='forecastapp' class='heading'>ForecastApp</h1>
+
+<p>Repository an iOS weather Forecast app: ForecastApp.</p>
+
+<p>This app was created to work on Clean Architecture, RxSwift and all the technologies listed in the table below.</p>
+<h2 id='objective-and-audience-of-the-app' class='heading'>Objective and audience of the app</h2>
+
+<p>The main functionality of the app is to display the weather forecast for the current user GPS location for the next 2/3 hours, containing the following data:</p>
+
+<ul>
+<li>temperature</li>
+<li>wind</li>
+<li>precipitation
+Moreover, among others things, the user will be able to request the weather for other locations.</li>
+</ul>
+<h2 id='1-build-and-install' class='heading'>1. Build and install</h2>
+<h3 id='1-1-requirements' class='heading'>1.1. Requirements</h3>
+
+<ul>
+<li>Xcode 9.3</li>
+<li>iOS 10 SDK and above</li>
+<li>Swift 4</li>
+</ul>
+<h3 id='1-2-getting-the-code' class='heading'>1.2. Getting the code</h3>
+
+<p>In order to build, run and access the app, the first thing you have to do is to clone the repository:</p>
+<pre class="highlight swift"><code><span class="n">git</span> <span class="n">clone</span> <span class="nv">https</span><span class="p">:</span><span class="c1">//github.com/RLRG/ForecastApp.git</span>
+</code></pre>
+
+<p>It is important to remark that we have used CocoaPods as the dependency manager for this project so that it is needed to run a ‘pod install’ command in the same path where the PodFile is located to download all the third-party frameworks:</p>
+<pre class="highlight swift"><code><span class="n">pod</span> <span class="n">install</span>
+</code></pre>
+<h3 id='1-3-running-the-app' class='heading'>1.3. Running the app</h3>
+
+<p>Open <code>ForecastApp.xcworkspace</code> with XCode. Then, you are ready to go !</p>
+
+<p>Before running it, note that there are two targets for now:</p>
+
+<ul>
+<li>ForecastAppLAB: When you run this target, you will see an extra button in order to open the FLEX in-app debugger, which is used to monitor and get information about the operation of the app in real time: logs, local database, network operation and so on.</li>
+<li>ForecastApp: This target would be used for the submission to the App Store.</li>
+</ul>
+<h2 id='2-resources' class='heading'>2. Resources</h2>
+
+<p>This paragraph includes all the resources used to create this project, including frameworks, APIs and other information resources such as tutorials, documentation and so on.</p>
+<h3 id='2-1-third-party-frameworks' class='heading'>2.1. Third-party frameworks</h3>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/CocoaPods/CocoaPods">CocoaPods</a></td>
+<td>The Cocoa Dependency Manager.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Flipboard/FLEX">FLEX Debugger</a></td>
+<td>An in-app debugger.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
+<td>A tool to enforce Swift style and conventions.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/Alamofire/Alamofire">Alamofire</a></td>
+<td>Elegant HTTP Networking in Swift.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/realm/realm-cocoa">Realm</a></td>
+<td>Mobile database used to persist data of the app.</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ReactiveX/RxSwift">RxSwift</a></td>
+<td>Reactive Programming in Swift used mainly to communicate layers of the app.</td>
+</tr>
+<tr>
+<td><a href="https://travis-ci.org/">Travis CI</a></td>
+<td>Continuous Integration used to build the project and run unit tests automatically.</td>
+</tr>
+<tr>
+<td>Other</td>
+<td>Other frameworks related to the ones already mentioned such as: RxRealm, RxTest, RxSwiftExt, RxAlamofire, ObjectMapper, QueryKit, RealmSwift (see project PodFile)</td>
+</tr>
+</tbody></table>
+<h3 id='2-2-apis' class='heading'>2.2. APIs</h3>
+
+<table><thead>
+<tr>
+<th>Framework</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://openweathermap.org">OpenWeather</a></td>
+<td>It is used to retrieve the information about the weather.</td>
+</tr>
+</tbody></table>
+<h3 id='2-3-other-information-resources' class='heading'>2.3. Other information resources</h3>
+
+<table><thead>
+<tr>
+<th>Resource</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><a href="https://github.com/realm/jazzy">Realm/Jazzy</a></td>
+<td>Soulful docs for Swift &amp; Objective-C. Framework used to generate documentation of the code.</td>
+</tr>
+<tr>
+<td>App icon and buttons</td>
+<td>Icon made by Rami McMin from <a href="https://www.flaticon.com">https://www.flaticon.com</a> and all the sizes of the icon were generated with <a href="https://makeappicon.com/">https://makeappicon.com/</a></td>
+</tr>
+<tr>
+<td><a href="https://realm.io/docs/swift/latest/#migrations">Realm database migrations</a></td>
+<td>The procedure we need to follow in case the Realm database model changes.</td>
+</tr>
+</tbody></table>
+<h2 id='3-future-work-amp-improvements' class='heading'>3. Future work &amp; Improvements</h2>
+
+<p>Among other things:</p>
+
+<ul>
+<li>Include an animation when the app is launching.</li>
+<li>Extend the model of the app with more useful information for the user.</li>
+<li>&hellip;</li>
+</ul>
+<h2 id='4-feedback' class='heading'>4. Feedback</h2>
+
+<p>As I am continuously learning, I would appreciate if you take a look at my code and you have recommendations to improve it in different ways. You can contact me at <a href="mailto:rodri.lopezromero@gmail.com">rodri.lopezromero@gmail.com</a> to do so :smiley:</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>The contents of this repository are covered under the <a href="https://choosealicense.com/licenses/apache-2.0/">Apache License 2.0</a>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(py)window"></a>
+                    <a name="//apple_ref/swift/Property/window" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(py)window">window</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The backdrop for the app’s user interface and the object that dispatches events to your views.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">window</span><span class="p">:</span> <span class="kt">UIWindow</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)application:didFinishLaunchingWithOptions:"></a>
+                    <a name="//apple_ref/swift/Method/application(_:didFinishLaunchingWithOptions:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)application:didFinishLaunchingWithOptions:">application(_:didFinishLaunchingWithOptions:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method is called when the app is initializing.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFinishLaunchingWithOptions</span> <span class="nv">launchOptions</span><span class="p">:</span> <span class="p">[</span><span class="kt">UIApplicationLaunchOptionsKey</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>launchOptions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A dictionary indicating the reason the app was launched (if any). The contents of this dictionary may be empty in situations where the user launched the app directly.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NO if the app cannot handle the URL resource or continue a user activity, otherwise return YES. The return value is ignored if the app is launched as a result of a remote notification.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillResignActive:"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillResignActive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillResignActive:">applicationWillResignActive(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationDidEnterBackground:"></a>
+                    <a name="//apple_ref/swift/Method/applicationDidEnterBackground(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationDidEnterBackground:">applicationDidEnterBackground(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillEnterForeground:"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillEnterForeground(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillEnterForeground:">applicationWillEnterForeground(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationDidBecomeActive:"></a>
+                    <a name="//apple_ref/swift/Method/applicationDidBecomeActive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationDidBecomeActive:">applicationDidBecomeActive(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillTerminate:"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillTerminate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)AppDelegate(im)applicationWillTerminate:">applicationWillTerminate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>ForecastApp current app singleton</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/AppDelegate%20extension"></a>
+                <a name="//apple_ref/swift/Section/AppDelegate extension" class="dashAnchor"></a>
+                <a href="#/AppDelegate%20extension">
+                  <h3 class="section-name">AppDelegate extension</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp0B8DelegateC6sharedACvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/shared" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp0B8DelegateC6sharedACvpZ">shared</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shared application delegate</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">shared</span><span class="p">:</span> <span class="kt">AppDelegate</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
