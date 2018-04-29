@@ -194,4 +194,13 @@ class MainVC: UIViewController {
         }
     }
     
+    /**
+     This function will allow in the future to request the weather forecast by asking the name of a city to the user, not just the current location of the iphone.
+     - Parameter sender: The button sending the action, in this case: the "Add" button.
+    */
+    @IBAction func searchWeatherForAnotherCity(_ sender: UIBarButtonItem) {
+        AlertsManager.alert(caller: self, message: "The idea for this button would be to be able to display a small screen asking for the name of the city and request the weather forecast for that city. This will be done in a future version", title: "WARNING") {
+            self.dismiss(animated: true, completion: nil)
+        }
+    }
 }

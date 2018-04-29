@@ -57,7 +57,7 @@ extension WeatherResult: ImmutableMappable {
         // ID & City
         if let cityInfo = map.JSON["city"] as! [String:Any]?, // swiftlint:disable:this force_cast
             let cityName = cityInfo["name"] {
-            weatherResultID = cityName as! String
+            weatherResultID = cityName as! String // swiftlint:disable:this force_cast
             city = City(name: cityName as! String, timeRequested: Date()) // swiftlint:disable:this force_cast
         } else {
             weatherResultID = ""
@@ -90,14 +90,14 @@ extension WeatherRange: ImmutableMappable {
     public init(map: Map) throws {
         
         // ID
-        if let time = map.JSON["dt"] { // swiftlint:disable:this force_cast
+        if let time = map.JSON["dt"] {
             id = Int(TimeInterval(exactly: time as! Int)!) // swiftlint:disable:this force_cast
         } else {
             id = 0
         }
         
         // StartingTime
-        if let time = map.JSON["dt"] { // swiftlint:disable:this force_cast
+        if let time = map.JSON["dt"] {
             startingTime = Date(timeIntervalSince1970: TimeInterval(exactly: time as! Int)!) // swiftlint:disable:this force_cast
         } else {
             startingTime = Date()

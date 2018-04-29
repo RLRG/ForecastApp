@@ -202,12 +202,24 @@
                                     </tableView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wPc-Em-j3q">
+                                <rect key="frame" x="29" y="90" width="69" height="30"/>
+                                <color key="backgroundColor" red="0.72291485820000001" green="0.2116235652" blue="0.1112230744" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Debugger">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showFLEXDebugger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ShV-gK-Zzt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xcn-Mf-Fn6" secondAttribute="bottom" constant="-20" id="15K-RT-Cl2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xcn-Mf-Fn6" secondAttribute="trailing" id="2qS-m9-ymC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="475-la-sS1" secondAttribute="trailing" constant="-20" id="31C-C6-PFv"/>
+                            <constraint firstItem="wPc-Em-j3q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Btq-HC-bQd"/>
+                            <constraint firstItem="wPc-Em-j3q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="EIG-Jh-pX0"/>
                             <constraint firstItem="Xcn-Mf-Fn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mop-M5-hCp"/>
                             <constraint firstItem="475-la-sS1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="dcD-6S-Ogo"/>
                             <constraint firstItem="475-la-sS1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-20" id="mza-Bd-SuZ"/>
@@ -217,9 +229,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Mt6-Nt-XzV">
-                        <barButtonItem key="leftBarButtonItem" title="Debugger" id="8O5-yP-36F">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="8O5-yP-36F">
                             <connections>
-                                <action selector="showFLEXDebugger:" destination="BYZ-38-t0r" id="160-42-9GD"/>
+                                <action selector="searchWeatherForAnotherCity:" destination="BYZ-38-t0r" id="uHA-QC-dge"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="CKx-0b-LhT">
@@ -230,7 +242,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="cityLabel" destination="8MZ-Q5-6ww" id="QLP-AO-RkI"/>
-                        <outlet property="debuggerButton" destination="8O5-yP-36F" id="APu-O1-BfP"/>
+                        <outlet property="debuggerButton" destination="wPc-Em-j3q" id="2qL-t3-32v"/>
                         <outlet property="mainIconWeather" destination="0Ip-ZC-xCL" id="5Rt-Fx-cSN"/>
                         <outlet property="mainPrecipitationPercent" destination="UTD-uE-YlE" id="3Eo-WK-KeK"/>
                         <outlet property="mainTemperatureLabel" destination="rEW-W4-9aL" id="kgf-7X-flN"/>
