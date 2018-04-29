@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  ForecastApp
+
+  Created by Rodrigo López-Romero Guijarro on 27/04/2018.
+  Copyright © 2018 rlrg. All rights reserved.
+*/
+
+// MARK: - UIMessages - General
+
+/* General error of the system */
+"Error" = "Error";
+
+/* General error of the system */
+"It has not been possible to update the Weather information. Please, check if you have Internet connection and try again." = "It has not been possible to update the Weather information. Please, check if you have Internet connection and try again.";

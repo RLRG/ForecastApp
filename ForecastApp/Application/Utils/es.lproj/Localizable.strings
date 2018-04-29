@@ -1,0 +1,21 @@
+/* 
+  Localizable.strings
+  ForecastApp
+
+  Created by Rodrigo López-Romero Guijarro on 27/04/2018.
+  Copyright © 2018 rlrg. All rights reserved.
+*/
+
+// MARK: - UIMessages - General
+
+/* General error of the system */
+"Error" = "Error";
+
+/* General error of the system */
+"It has not been possible to update the Weather information. Please, check if you have Internet connection and try again." = "No ha sido posible actualizar la información del tiempo. Por favor, comprueba que tienes acceso a Internet e inténtalo de nuevo.";
+
+/* Operation location error */
+"Operation location error" = "Error obteniendo la localización";
+
+/* Operation location error */
+"Please, check that you have allowed your location services and try again" = "Por favor, comprueba que has habilitado los servicios de localización e inténtalo de nuevo";

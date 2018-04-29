@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>MainVC Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/MainVC" class="dashAnchor"></a>
+    <a title="MainVC Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        MainVC Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AbstractRepository.html">AbstractRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AlertsManager.html">AlertsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainPresenter.html">MainPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainVC.html">MainVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network.html">Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMCity.html">RMCity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMLocation.html">RMLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherRange.html">RMWeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherResult.html">RMWeatherResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RealmRepo.html">RealmRepo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RunLoopThreadScheduler.html">RunLoopThreadScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeather.html">SearchWeather</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeatherUseCase.html">SearchWeatherUseCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerProvider.html">ServerProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThreadTarget.html">ThreadTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UseCaseProvider.html">UseCaseProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeatherRangeCell.html">WeatherRangeCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MainViewState.html">MainViewState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Object.html">Object</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Observable.html">Observable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SortDescriptor.html">SortDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11ForecastApp14abstractMethods5NeverOyF">abstractMethod()</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DomainConvertibleType.html">DomainConvertibleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RealmRepresentable.html">RealmRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SearchWeatherProtocol.html">SearchWeatherProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ServerProviderProtocol.html">ServerProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UseCaseProviderProtocol.html">UseCaseProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WeatherRangeCellProtocol.html">WeatherRangeCellProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/City.html">City</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/AppInfo.html">– AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/TableViewCell.html">– TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Storyboard.html">– Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UIMessages.html">UIMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Urls.html">Urls</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11ForecastApp16UserDefaultsKeysV">UserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherRange.html">WeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherResult.html">WeatherResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>MainVC</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">MainVC</span> <span class="p">:</span> <span class="kt">UIViewController</span></code></pre>
+
+                </div>
+              </div>
+            <p>MainVC</p>
+
+<p>This ViewController is the main screen to be presented in the app whose main purpose is to display the received weather forecast information.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties%20&amp;%20Initialization"></a>
+                <a name="//apple_ref/swift/Section/Properties &amp; Initialization" class="dashAnchor"></a>
+                <a href="#/Properties%20&amp;%20Initialization">
+                  <h3 class="section-name">Properties &amp; Initialization</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC9presenterSQyAA0C9PresenterCGvp"></a>
+                    <a name="//apple_ref/swift/Property/presenter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC9presenterSQyAA0C9PresenterCGvp">presenter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Reference to the presenter layer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">presenter</span><span class="p">:</span> <span class="kt"><a href="../Classes/MainPresenter.html">MainPresenter</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC10disposeBag33_B2BEAE800977CEEC5EBD6167D6A9E3CCLL7RxSwift07DisposeF0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/disposeBag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC10disposeBag33_B2BEAE800977CEEC5EBD6167D6A9E3CCLL7RxSwift07DisposeF0Cvp">disposeBag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bag to dispose added disposables</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">disposeBag</span><span class="p">:</span> <span class="kt">DisposeBag</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)debuggerButton"></a>
+                    <a name="//apple_ref/swift/Property/debuggerButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)debuggerButton">debuggerButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UIBarButtonItem used to display the in-app debugger</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">debuggerButton</span><span class="p">:</span> <span class="kt">UIButton</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)refreshButton"></a>
+                    <a name="//apple_ref/swift/Property/refreshButton" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)refreshButton">refreshButton</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>UIBarButtonItem used to refresh the weather information</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">refreshButton</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)cityLabel"></a>
+                    <a name="//apple_ref/swift/Property/cityLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)cityLabel">cityLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of the current city</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">cityLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)updatedTimeLabel"></a>
+                    <a name="//apple_ref/swift/Property/updatedTimeLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)updatedTimeLabel">updatedTimeLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Label indicating the last time we could update the information from the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">updatedTimeLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureLabel"></a>
+                    <a name="//apple_ref/swift/Property/mainTemperatureLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureLabel">mainTemperatureLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The average temperature for the current city/timeframe</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainTemperatureLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainTimeframeLabel"></a>
+                    <a name="//apple_ref/swift/Property/mainTimeframeLabel" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainTimeframeLabel">mainTimeframeLabel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The current or the last updated timeframe</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainTimeframeLabel</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainIconWeather"></a>
+                    <a name="//apple_ref/swift/Property/mainIconWeather" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainIconWeather">mainIconWeather</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The icon weather for the current city/timeframe</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainIconWeather</span><span class="p">:</span> <span class="kt">UIImageView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainWindSpeed"></a>
+                    <a name="//apple_ref/swift/Property/mainWindSpeed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainWindSpeed">mainWindSpeed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The speed of the wind (m/s) label</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainWindSpeed</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainPrecipitationPercent"></a>
+                    <a name="//apple_ref/swift/Property/mainPrecipitationPercent" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainPrecipitationPercent">mainPrecipitationPercent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The raining probability percentage</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainPrecipitationPercent</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureMax"></a>
+                    <a name="//apple_ref/swift/Property/mainTemperatureMax" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureMax">mainTemperatureMax</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The max temperature for the current city/timeframe</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainTemperatureMax</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureMin"></a>
+                    <a name="//apple_ref/swift/Property/mainTemperatureMin" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)mainTemperatureMin">mainTemperatureMin</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The min temperature for the current city/timeframe</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">mainTemperatureMin</span><span class="p">:</span> <span class="kt">UILabel</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(py)weatherTableView"></a>
+                    <a name="//apple_ref/swift/Property/weatherTableView" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(py)weatherTableView">weatherTableView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Table view to display the WeatherRanges</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBOutlet</span>
+<span class="k">weak</span> <span class="k">var</span> <span class="nv">weatherTableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC15locationManagerSo010CLLocationF0CSgvp"></a>
+                    <a name="//apple_ref/swift/Property/locationManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC15locationManagerSo010CLLocationF0CSgvp">locationManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>LocationManager property responsible for getting the current location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">locationManager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC12lastLocationSo10CLLocationCSgvp"></a>
+                    <a name="//apple_ref/swift/Property/lastLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC12lastLocationSo10CLLocationCSgvp">lastLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The last location received from the LocationManager, ie., the current location</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">lastLocation</span><span class="p">:</span> <span class="kt">CLLocation</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC11isFirstOpenSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isFirstOpen" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC11isFirstOpenSbvp">isFirstOpen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag used to make the first data request only.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isFirstOpen</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC20currentWeatherResultAA0fG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/currentWeatherResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC20currentWeatherResultAA0fG0VSgvp">currentWeatherResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The last weather forecast data to be shown.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">currentWeatherResult</span><span class="p">:</span> <span class="kt"><a href="../Structs/WeatherResult.html">WeatherResult</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(im)viewDidLoad"></a>
+                    <a name="//apple_ref/swift/Method/viewDidLoad()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(im)viewDidLoad">viewDidLoad()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Lifecycle method called when the object is initializing</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(im)showFLEXDebugger:"></a>
+                    <a name="//apple_ref/swift/Method/showFLEXDebugger(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(im)showFLEXDebugger:">showFLEXDebugger(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Display the FLEX in-app debugger when the target <q>ForecastAppLAB</q> is running</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">showFLEXDebugger</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIButton</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIBarButtonItem caller of the action</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC22setupViewStateObserveryyF"></a>
+                    <a name="//apple_ref/swift/Method/setupViewStateObserver()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC22setupViewStateObserveryyF">setupViewStateObserver()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This UIViewController subscribes to the mainViewStateObservable to get the current view state and display it</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">setupViewStateObserver</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/UI%20Logic%20(Presenter%20-%3E%20UIViewController)"></a>
+                <a name="//apple_ref/swift/Section/UI Logic (Presenter -&gt; UIViewController)" class="dashAnchor"></a>
+                <a href="#/UI%20Logic%20(Presenter%20-%3E%20UIViewController)">
+                  <h3 class="section-name">UI Logic (Presenter -&gt; UIViewController)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC18displayLoadingViewyyF"></a>
+                    <a name="//apple_ref/swift/Method/displayLoadingView()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC18displayLoadingViewyyF">displayLoadingView()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let the user know that an operation is loading in the app</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayLoadingView</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC8updateUIyyF"></a>
+                    <a name="//apple_ref/swift/Method/updateUI()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC8updateUIyyF">updateUI()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Responsible for updating the User Interface to show the weather forecast info to the user.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">updateUI</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp6MainVCC12displayErrorySS4with_SS3andtF"></a>
+                    <a name="//apple_ref/swift/Method/displayError(with:and:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp6MainVCC12displayErrorySS4with_SS3andtF">displayError(with:and:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Let the user know that an error has ocurred during the course of an operation</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">displayError</span><span class="p">(</span><span class="n">with</span> <span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">and</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>title</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>title for error message</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>message</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>error message inside the view</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Actions%20(UIViewController%20-%3E%20Presenter)"></a>
+                <a name="//apple_ref/swift/Section/Actions (UIViewController -&gt; Presenter)" class="dashAnchor"></a>
+                <a href="#/Actions%20(UIViewController%20-%3E%20Presenter)">
+                  <h3 class="section-name">Actions (UIViewController -&gt; Presenter)</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(im)refreshAction:"></a>
+                    <a name="//apple_ref/swift/Method/refreshAction(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(im)refreshAction:">refreshAction(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Refresh button action allowing to get updated information about the weather forecast.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">refreshAction</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>refresh bar button</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@ForecastApp@objc(cs)MainVC(im)searchWeatherForAnotherCity:"></a>
+                    <a name="//apple_ref/swift/Method/searchWeatherForAnotherCity(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@ForecastApp@objc(cs)MainVC(im)searchWeatherForAnotherCity:">searchWeatherForAnotherCity(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This function will allow in the future to request the weather forecast by asking the name of a city to the user, not just the current location of the iphone.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@IBAction</span>
+<span class="kd">func</span> <span class="nf">searchWeatherForAnotherCity</span><span class="p">(</span><span class="n">_</span> <span class="nv">sender</span><span class="p">:</span> <span class="kt">UIBarButtonItem</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>sender</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The button sending the action, in this case: the <q>Add</q> button.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@ForecastApp@objc(cs)MainVC(im)locationManager:didFailWithError:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didFailWithError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@ForecastApp@objc(cs)MainVC(im)locationManager:didFailWithError:">locationManager(_:didFailWithError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that the location manager was unable to retrieve a location value.
+manager</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didFailWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object that was unable to retrieve the location.
+error</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The error object containing the reason the location or heading could not be retrieved.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@ForecastApp@objc(cs)MainVC(im)locationManager:didUpdateLocations:"></a>
+                    <a name="//apple_ref/swift/Method/locationManager(_:didUpdateLocations:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@ForecastApp@objc(cs)MainVC(im)locationManager:didUpdateLocations:">locationManager(_:didUpdateLocations:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the delegate that new location data is available.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">locationManager</span><span class="p">(</span><span class="n">_</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt">CLLocationManager</span><span class="p">,</span> <span class="n">didUpdateLocations</span> <span class="nv">locations</span><span class="p">:</span> <span class="p">[</span><span class="kt">CLLocation</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>manager</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The location manager object that generated the update event.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>locations</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>An array of CLLocation objects containing the location data.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Table%20View%20data%20source"></a>
+                <a name="//apple_ref/swift/Section/Table View data source" class="dashAnchor"></a>
+                <a href="#/Table%20View%20data%20source">
+                  <h3 class="section-name">Table View data source</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@ForecastApp@objc(cs)MainVC(im)tableView:numberOfRowsInSection:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:numberOfRowsInSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@ForecastApp@objc(cs)MainVC(im)tableView:numberOfRowsInSection:">tableView(_:numberOfRowsInSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Tells the data source to return the number of rows in a given section of a table view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">numberOfRowsInSection</span> <span class="nv">section</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>table view object requesting the information</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>section</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>index number identifying a section in tableView</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>number of rows in section</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@CM@ForecastApp@objc(cs)MainVC(im)tableView:cellForRowAtIndexPath:"></a>
+                    <a name="//apple_ref/swift/Method/tableView(_:cellForRowAt:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@CM@ForecastApp@objc(cs)MainVC(im)tableView:cellForRowAtIndexPath:">tableView(_:cellForRowAt:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Asks the data source for a cell to insert in a particular location of the table view</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">tableView</span><span class="p">(</span><span class="n">_</span> <span class="nv">tableView</span><span class="p">:</span> <span class="kt">UITableView</span><span class="p">,</span> <span class="n">cellForRowAt</span> <span class="nv">indexPath</span><span class="p">:</span> <span class="kt">IndexPath</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UITableViewCell</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>tableView</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>table view object requesting the cell</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>indexPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>index path locating a row in tableView</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>object inheriting from UITableViewCell that the table view can use for the specified row</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

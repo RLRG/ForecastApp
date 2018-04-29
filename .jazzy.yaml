@@ -1,0 +1,12 @@
+min_acl: private
+xcodebuild_arguments:
+- "-workspace"
+- "ForecastApp.xcworkspace"
+- "-scheme"
+- "ForecastApp"
+- "-configuration"
+- "Release"
+- "clean"
+- "build"
+- "DEVELOPMENT_TEAM=876L3LH7TJ"
+- "-allowProvisioningUpdates"

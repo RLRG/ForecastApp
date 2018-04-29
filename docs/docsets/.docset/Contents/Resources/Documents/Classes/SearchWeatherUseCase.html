@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SearchWeatherUseCase Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/SearchWeatherUseCase" class="dashAnchor"></a>
+    <a title="SearchWeatherUseCase Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (71% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SearchWeatherUseCase Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AbstractRepository.html">AbstractRepository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Action.html">Action</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AlertsManager.html">AlertsManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Application.html">Application</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainPresenter.html">MainPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MainVC.html">MainVC</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Network.html">Network</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMCity.html">RMCity</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMLocation.html">RMLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherRange.html">RMWeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RMWeatherResult.html">RMWeatherResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RealmRepo.html">RealmRepo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/RunLoopThreadScheduler.html">RunLoopThreadScheduler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeather.html">SearchWeather</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SearchWeatherUseCase.html">SearchWeatherUseCase</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ServerProvider.html">ServerProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ThreadTarget.html">ThreadTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UseCaseProvider.html">UseCaseProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WeatherRangeCell.html">WeatherRangeCell</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/MainViewState.html">MainViewState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Date.html">Date</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Object.html">Object</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Observable.html">Observable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Reactive.html">Reactive</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Sequence.html">Sequence</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/SortDescriptor.html">SortDescriptor</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:11ForecastApp14abstractMethods5NeverOyF">abstractMethod()</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DomainConvertibleType.html">DomainConvertibleType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/RealmRepresentable.html">RealmRepresentable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SearchWeatherProtocol.html">SearchWeatherProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ServerProviderProtocol.html">ServerProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UseCaseProviderProtocol.html">UseCaseProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WeatherRangeCellProtocol.html">WeatherRangeCellProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/API.html">API</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/City.html">City</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/AppInfo.html">– AppInfo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Button.html">– Button</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/TableViewCell.html">– TableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Constants/Storyboard.html">– Storyboard</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Location.html">Location</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/UIMessages.html">UIMessages</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Urls.html">Urls</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:11ForecastApp16UserDefaultsKeysV">UserDefaultsKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherRange.html">WeatherRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/WeatherResult.html">WeatherResult</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SearchWeatherUseCase</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SearchWeatherUseCase</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SearchWeatherProtocol.html">SearchWeatherProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>SearchWeatherUseCase</p>
+
+<p>Implementation of the logic to get the weather forecast information</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties%20&amp;%20Initialization"></a>
+                <a name="//apple_ref/swift/Section/Properties &amp; Initialization" class="dashAnchor"></a>
+                <a href="#/Properties%20&amp;%20Initialization">
+                  <h3 class="section-name">Properties &amp; Initialization</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp20SearchWeatherUseCaseC10repository33_AF5A7C4D470BC8A37045CC09F670A2ADLLAA10RepositoryCvp"></a>
+                    <a name="//apple_ref/swift/Property/repository" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp20SearchWeatherUseCaseC10repository33_AF5A7C4D470BC8A37045CC09F670A2ADLLAA10RepositoryCvp">repository</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Repository layer to call the searchWeather functionality</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">repository</span><span class="p">:</span> <span class="kt"><a href="../Classes/Repository.html">Repository</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp20SearchWeatherUseCaseC10disposeBag33_AF5A7C4D470BC8A37045CC09F670A2ADLL7RxSwift07DisposeH0Cvp"></a>
+                    <a name="//apple_ref/swift/Property/disposeBag" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp20SearchWeatherUseCaseC10disposeBag33_AF5A7C4D470BC8A37045CC09F670A2ADLL7RxSwift07DisposeH0Cvp">disposeBag</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Bag to dispose added disposables [RxSwift]</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="k">let</span> <span class="nv">disposeBag</span><span class="p">:</span> <span class="kt">DisposeBag</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp20SearchWeatherUseCaseCAcA10RepositoryC10repository_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(repository:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp20SearchWeatherUseCaseCAcA10RepositoryC10repository_tcfc">init(repository:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialization method for the SearchWeatherUseCase class</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">repository</span><span class="p">:</span> <span class="kt"><a href="../Classes/Repository.html">Repository</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>repository</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The repository layer to call the SearchWeather functionality</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Logic"></a>
+                <a name="//apple_ref/swift/Section/Logic" class="dashAnchor"></a>
+                <a href="#/Logic">
+                  <h3 class="section-name">Logic</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11ForecastApp20SearchWeatherUseCaseC03getdA07RxSwift10ObservableCyAA0D6ResultVGSSSg8withName_Sd0L3LatSd0L3LontF"></a>
+                    <a name="//apple_ref/swift/Method/getWeatherForecast(withName:withLat:withLon:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11ForecastApp20SearchWeatherUseCaseC03getdA07RxSwift10ObservableCyAA0D6ResultVGSSSg8withName_Sd0L3LatSd0L3LontF">getWeatherForecast(withName:withLat:withLon:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get the weather forecast data for a city (optional) or for the lat/lon coordinates given.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getWeatherForecast</span><span class="p">(</span><span class="n">withName</span> <span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">withLat</span> <span class="nv">lat</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="n">withLon</span> <span class="nv">lon</span><span class="p">:</span> <span class="kt">Double</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Observable</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/WeatherResult.html">WeatherResult</a></span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>name</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the name of the city to look for. It is optional.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lat</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the location latitude used to get the weather forecast.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>lon</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the location longitude used to get the weather forecast.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An Observable with WeatherResult objects</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-04-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,537 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Application/Utils/UIMessages.swift",
+      "line": 20,
+      "symbol": "UIMessages.errorGeneralTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Application/Utils/UIMessages.swift",
+      "line": 21,
+      "symbol": "UIMessages.errorGeneral",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Application/Utils/UIMessages.swift",
+      "line": 23,
+      "symbol": "UIMessages.errorLocationServicesTitle",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Application/Utils/UIMessages.swift",
+      "line": 24,
+      "symbol": "UIMessages.errorLocationServices",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Interactor/Provider/UseCaseProviderProtocol.swift",
+      "line": 19,
+      "symbol": "UseCaseProviderProtocol.makeSearchWeatherUseCase()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/City.swift",
+      "line": 17,
+      "symbol": "City.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/City.swift",
+      "line": 18,
+      "symbol": "City.timeRequested",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/Location.swift",
+      "line": 17,
+      "symbol": "Location.locationName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/Location.swift",
+      "line": 18,
+      "symbol": "Location.lat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/Location.swift",
+      "line": 19,
+      "symbol": "Location.lon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 17,
+      "symbol": "WeatherRange.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 18,
+      "symbol": "WeatherRange.startingTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 19,
+      "symbol": "WeatherRange.temperatureAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 20,
+      "symbol": "WeatherRange.temperatureMin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 21,
+      "symbol": "WeatherRange.temperatureMax",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 22,
+      "symbol": "WeatherRange.windSpeed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 23,
+      "symbol": "WeatherRange.windDegrees",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 24,
+      "symbol": "WeatherRange.precipitation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherRange.swift",
+      "line": 25,
+      "symbol": "WeatherRange.weatherIcon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherResult.swift",
+      "line": 17,
+      "symbol": "WeatherResult.weatherResultID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherResult.swift",
+      "line": 18,
+      "symbol": "WeatherResult.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherResult.swift",
+      "line": 19,
+      "symbol": "WeatherResult.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Model/WeatherResult.swift",
+      "line": 20,
+      "symbol": "WeatherResult.weatherRanges",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Presentation/Main/View/MainViewState.swift",
+      "line": 17,
+      "symbol": "MainViewState.loading",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Presentation/Main/View/MainViewState.swift",
+      "line": 18,
+      "symbol": "MainViewState.displayWeatherInfo",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Presentation/Main/View/MainViewState.swift",
+      "line": 19,
+      "symbol": "MainViewState.error",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/DomainConvertibleType.swift",
+      "line": 11,
+      "symbol": "DomainConvertibleType",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/DomainConvertibleType.swift",
+      "line": 12,
+      "symbol": "DomainConvertibleType.DomainType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/DomainConvertibleType.swift",
+      "line": 14,
+      "symbol": "DomainConvertibleType.asDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/ObservableExt.swift",
+      "line": 13,
+      "symbol": "Observable.DomainType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/ObservableExt.swift",
+      "line": 15,
+      "symbol": "Observable.mapToDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/ObservableExt.swift",
+      "line": 24,
+      "symbol": "Sequence.mapToDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmExt.swift",
+      "line": 15,
+      "symbol": "Object.build(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmExt.swift",
+      "line": 23,
+      "symbol": "SortDescriptor.init(sortDescriptor:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmExt.swift",
+      "line": 30,
+      "symbol": "Reactive.save(entity:update:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmExt.swift",
+      "line": 45,
+      "symbol": "Reactive.delete(entity:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmRepresentable.swift",
+      "line": 11,
+      "symbol": "RealmRepresentable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmRepresentable.swift",
+      "line": 12,
+      "symbol": "RealmRepresentable.RealmType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RealmRepresentable.swift",
+      "line": 14,
+      "symbol": "RealmRepresentable.asRealm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 12,
+      "symbol": "RunLoopThreadScheduler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 13,
+      "symbol": "RunLoopThreadScheduler.thread",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 14,
+      "symbol": "RunLoopThreadScheduler.target",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 16,
+      "symbol": "RunLoopThreadScheduler.init(threadName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 48,
+      "symbol": "RunLoopThreadScheduler.deinit",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 53,
+      "symbol": "ThreadTarget",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 54,
+      "symbol": "ThreadTarget.threadEntryPoint()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 61,
+      "symbol": "Action",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 62,
+      "symbol": "Action.action",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 64,
+      "symbol": "Action.init(action:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Conversion&Utils/RunLoopThreadScheduler.swift",
+      "line": 68,
+      "symbol": "Action.performAction()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMCity.swift",
+      "line": 19,
+      "symbol": "RMCity.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMCity.swift",
+      "line": 20,
+      "symbol": "RMCity.timeRequested",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMCity.swift",
+      "line": 31,
+      "symbol": "RMCity.asDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMCity.swift",
+      "line": 41,
+      "symbol": "City.asRealm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMLocation.swift",
+      "line": 19,
+      "symbol": "RMLocation.locationName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMLocation.swift",
+      "line": 20,
+      "symbol": "RMLocation.lat",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMLocation.swift",
+      "line": 21,
+      "symbol": "RMLocation.lon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMLocation.swift",
+      "line": 32,
+      "symbol": "RMLocation.asDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMLocation.swift",
+      "line": 43,
+      "symbol": "Location.asRealm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 19,
+      "symbol": "RMWeatherRange.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 20,
+      "symbol": "RMWeatherRange.startingTime",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 21,
+      "symbol": "RMWeatherRange.temperatureAverage",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 22,
+      "symbol": "RMWeatherRange.temperatureMin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 23,
+      "symbol": "RMWeatherRange.temperatureMax",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 24,
+      "symbol": "RMWeatherRange.windSpeed",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 25,
+      "symbol": "RMWeatherRange.windDegrees",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 26,
+      "symbol": "RMWeatherRange.precipitation",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 27,
+      "symbol": "RMWeatherRange.weatherIcon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 38,
+      "symbol": "RMWeatherRange.asDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherRange.swift",
+      "line": 55,
+      "symbol": "WeatherRange.asRealm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 19,
+      "symbol": "RMWeatherResult.weatherResultID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 20,
+      "symbol": "RMWeatherResult.city",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 21,
+      "symbol": "RMWeatherResult.location",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 22,
+      "symbol": "RMWeatherResult.weatherRanges",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 33,
+      "symbol": "RMWeatherResult.asDomain()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/RLRG/Desktop/ForecastApp/ForecastApp/Repository/Database/Entities/RMWeatherResult.swift",
+      "line": 49,
+      "symbol": "WeatherResult.asRealm()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/RLRG/Desktop/ForecastApp"
+}
