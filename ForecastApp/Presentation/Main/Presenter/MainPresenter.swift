@@ -51,21 +51,35 @@ class MainPresenter {
     // MARK: - Logic
     
     /**
-     Called by the UIViewController when is ready to display data, it gets the weatherForecast
+     Call the SearchWeather use case to get the weather forecast data. If it succeeds, the presenter sets the UIViewController to the "displayWeatherInfo" state. If it does not succeed, the presenter tells the UIViewController that an error must be displayed
      */
-    func viewIsReady() {
-        getWeatherForecast()
+    func getWeatherForecast(for cityName: String) {
+        self.currentViewState = MainViewState.loading
+        self.mainViewState.onNext(self.currentViewState)
+        
+        getWeatherForecastUseCase
+            .getWeatherForecast(withName: cityName, withLat: 0.0, withLon: 0.0) // TODO: Set appropriate parameter values
+            .subscribe(
+                onNext: { weatherResult in
+                    self.currentWeatherResult = weatherResult
+                    self.currentViewState = MainViewState.displayWeatherInfo(weatherResult: weatherResult)
+                    self.mainViewState.onNext(self.currentViewState)
+            },
+                onError: { error in
+                    self.displayError(with: UIMessages.errorGeneralTitle, and: UIMessages.errorGeneral)
+            })
+            .disposed(by: self.disposeBag)
     }
     
     /**
      Call the SearchWeather use case to get the weather forecast data. If it succeeds, the presenter sets the UIViewController to the "displayWeatherInfo" state. If it does not succeed, the presenter tells the UIViewController that an error must be displayed
      */
-    func getWeatherForecast() {
+    func getWeatherForecastForCurrentLocation(withLat lat: Double, withLon lon: Double) {
         self.currentViewState = MainViewState.loading
         self.mainViewState.onNext(self.currentViewState)
         
         getWeatherForecastUseCase
-            .getWeatherForecast(withName: nil, withLat: 0.0, withLon: 0.0) // TODO: Set appropriate parameter values
+            .getWeatherForecast(withName: nil, withLat: lat, withLon: lon)
             .subscribe(
                 onNext: { weatherResult in
                     self.currentWeatherResult = weatherResult

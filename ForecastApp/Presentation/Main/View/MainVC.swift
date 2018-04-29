@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import CoreLocation
 import SVProgressHUD
 #if ForecastAppLAB
     import FLEX
@@ -48,6 +49,11 @@ class MainVC: UIViewController {
     @IBOutlet weak var weatherTableView: UITableView!
     
     /// TODO: Description
+    var locationManager: CLLocationManager?
+    /// TODO: Description
+    var lastLocation: CLLocation?
+    
+    /// TODO: Description
     var currentWeatherResult: WeatherResult?
     
     /**
@@ -55,6 +61,15 @@ class MainVC: UIViewController {
      */
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // LocationManager config
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager = CLLocationManager()
+            locationManager?.delegate = self
+            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager?.requestWhenInUseAuthorization()
+            locationManager?.startUpdatingLocation()
+        }
         
         // In-App Debugger
         #if car_sharing_remourbanLAB
@@ -64,7 +79,6 @@ class MainVC: UIViewController {
         #endif
         
         setupViewStateObserver()
-        presenter.viewIsReady()
     }
     
     /**
@@ -141,7 +155,12 @@ class MainVC: UIViewController {
      - Parameter sender:
     */
     @IBAction func refreshAction(_ sender: UIBarButtonItem) {
-        presenter.getWeatherForecast()
+        if let lat = lastLocation?.coordinate.latitude,
+            let lon = lastLocation?.coordinate.longitude {
+            presenter.getWeatherForecastForCurrentLocation(withLat: lat, withLon: lon)
+        } else {
+            AlertsManager.alert(caller: self, message: "Please, check that you have allowed your location services and try again", title: "Operation error") {} // TODO: Remove constants
+        }
     }
     
 }
