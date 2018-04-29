@@ -22,7 +22,7 @@ extension Date {
         // Times
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.current
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
         dateFormatter.dateFormat = "HH"
         
         // Week day
@@ -45,7 +45,7 @@ extension Date {
         // Times
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale.current
-        dateFormatter.timeZone = TimeZone(abbreviation: "GMT")
+        dateFormatter.timeZone = TimeZone.autoupdatingCurrent
         dateFormatter.dateFormat = "HH:mm"
         
         // Week day
