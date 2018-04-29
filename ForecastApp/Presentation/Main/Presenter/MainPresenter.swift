@@ -52,6 +52,7 @@ class MainPresenter {
     
     /**
      Call the SearchWeather use case to get the weather forecast data. If it succeeds, the presenter sets the UIViewController to the "displayWeatherInfo" state. If it does not succeed, the presenter tells the UIViewController that an error must be displayed
+     - Parameter cityName: The name of the city used to request the weather forecast.
      */
     func getWeatherForecast(for cityName: String) {
         self.currentViewState = MainViewState.loading
@@ -73,6 +74,8 @@ class MainPresenter {
     
     /**
      Call the SearchWeather use case to get the weather forecast data. If it succeeds, the presenter sets the UIViewController to the "displayWeatherInfo" state. If it does not succeed, the presenter tells the UIViewController that an error must be displayed
+     - Parameter lat: latitude coordinate.
+     - Parameter lon: longitude coordinate.
      */
     func getWeatherForecastForCurrentLocation(withLat lat: Double, withLon lon: Double) {
         self.currentViewState = MainViewState.loading

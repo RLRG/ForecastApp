@@ -55,6 +55,40 @@ class MainPresenterTests: XCTestCase {
         XCTAssertEqual(viewStateObserver.events, [])
     }
     
+    func testGetWeatherForecastSuccess() {
+        scheduler.start()
+        sut.getWeatherForecast(for: TestData.city.name)
+        XCTAssertTrue(testSearchWeatherUseCase.searchWeatherInvoked)
+        XCTAssertEqual(viewStateObserver.events[0].value.element!, MainViewState.loading)
+        XCTAssertEqual(viewStateObserver.events[1].value.element!, MainViewState.displayWeatherInfo(weatherResult: TestData.weatherResult))
+    }
+    
+    func testGetWeatherForecastError() {
+        scheduler.start()
+        testSearchWeatherUseCase.error = true
+        sut.getWeatherForecast(for: TestData.city.name)
+        XCTAssertTrue(testSearchWeatherUseCase.searchWeatherInvoked)
+        XCTAssertEqual(viewStateObserver.events[0].value.element!, MainViewState.loading)
+        XCTAssertEqual(viewStateObserver.events[1].value.element!, MainViewState.error(title: UIMessages.errorGeneralTitle, message: UIMessages.errorGeneral))
+    }
+    
+    func testGetWeatherForecastForCurrentLocationSuccess() {
+        scheduler.start()
+        sut.getWeatherForecastForCurrentLocation(withLat: TestData.location.lat, withLon: TestData.location.lon)
+        XCTAssertTrue(testSearchWeatherUseCase.searchWeatherInvoked)
+        XCTAssertEqual(viewStateObserver.events[0].value.element!, MainViewState.loading)
+        XCTAssertEqual(viewStateObserver.events[1].value.element!, MainViewState.displayWeatherInfo(weatherResult: TestData.weatherResult))
+    }
+    
+    func testGetWeatherForecastForCurrentLocationError() {
+        scheduler.start()
+        testSearchWeatherUseCase.error = true
+        sut.getWeatherForecastForCurrentLocation(withLat: TestData.location.lat, withLon: TestData.location.lon)
+        XCTAssertTrue(testSearchWeatherUseCase.searchWeatherInvoked)
+        XCTAssertEqual(viewStateObserver.events[0].value.element!, MainViewState.loading)
+        XCTAssertEqual(viewStateObserver.events[1].value.element!, MainViewState.error(title: UIMessages.errorGeneralTitle, message: UIMessages.errorGeneral))
+    }
+    
     // MARK: - MOCKS
     
     class TestableSearchWeatherUseCase: SearchWeatherProtocol {
@@ -64,7 +98,7 @@ class MainPresenterTests: XCTestCase {
             searchWeatherInvoked = true
             return Observable<WeatherResult>.create { observer in
                 if !self.error {
-                    // observer.onNext(TestData.weatherResult)
+                    observer.onNext(TestData.weatherResult)
                     observer.onCompleted()
                 } else {
                     observer.onError(NSError(domain: "Error when getting weather forecast data", code: -1, userInfo: nil))
