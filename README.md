@@ -66,6 +66,10 @@ This paragraph includes all the resources used to create this project, including
 
 ## 3. Future work & Improvements
 Among other things:
+- Analytics, Bug reporting & Logging. We could have used Firebase for this task.
+- Add the "look city weather forecast" functionality, which is currently half developed. We only need to develop the UI part: add a new alert to enter the city name and, for example, add several screens having each of them one location.
+- About screen/info: including the attributions for the third-party frameworks used, the version of the app and so on.
+- Integrate Flickr to get an image from the city from where we are requesting the weather data and display it to the user.
 - Include an animation when the app is launching.
 - Extend the model of the app with more useful information for the user.
 - ...
