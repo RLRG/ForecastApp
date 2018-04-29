@@ -9,7 +9,10 @@ This app was created to work on Clean Architecture, RxSwift and all the technolo
  * temperature
  * wind
  * precipitation
+
  Moreover, among others things, the user will be able to request the weather for other locations.
+
+ ![Sample screenshot for the app](screenshots/simulator_screenshot.png)
 
 ## 1. Build and install
 
