@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchImage" translatesAutoresizingMaskIntoConstraints="NO" id="bzP-gE-LQA">
-                                <rect key="frame" x="-20" y="0.0" width="415" height="687"/>
+                                <rect key="frame" x="-20" y="-40" width="415" height="767"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ForecastApp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jrx-DJ-Bnc">
                                 <rect key="frame" x="81.5" y="85" width="213" height="48"/>
@@ -31,11 +31,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bzP-gE-LQA" secondAttribute="trailing" constant="-20" id="FCl-UF-mmU"/>
-                            <constraint firstItem="bzP-gE-LQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="Fne-xq-S7r"/>
+                            <constraint firstItem="bzP-gE-LQA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-60" id="Fne-xq-S7r"/>
                             <constraint firstItem="Jrx-DJ-Bnc" firstAttribute="centerX" secondItem="bzP-gE-LQA" secondAttribute="centerX" id="TbW-ir-Wa1"/>
                             <constraint firstItem="Jrx-DJ-Bnc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="65" id="ZfB-wi-tz4"/>
                             <constraint firstItem="bzP-gE-LQA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-20" id="pHS-0K-mqN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bzP-gE-LQA" secondAttribute="bottom" constant="-20" id="zYs-fG-MzY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bzP-gE-LQA" secondAttribute="bottom" constant="-60" id="zYs-fG-MzY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

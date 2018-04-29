@@ -92,7 +92,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PC1-lP-ZQa">
+                                    <tableView clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PC1-lP-ZQa">
                                         <rect key="frame" x="0.0" y="169" width="375" height="434"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -190,7 +190,6 @@
                         <outlet property="mainTemperatureMax" destination="dcB-6M-0Dp" id="aoj-Zd-QuM"/>
                         <outlet property="mainTemperatureMin" destination="nZ6-YZ-iqy" id="B8r-hf-18e"/>
                         <outlet property="mainTimeframeLabel" destination="DBs-RJ-tDY" id="Oc3-En-ybj"/>
-                        <outlet property="refreshAction" destination="CKx-0b-LhT" id="4nN-jC-fb2"/>
                         <outlet property="refreshButton" destination="CKx-0b-LhT" id="1wJ-2p-oNJ"/>
                         <outlet property="weatherTableView" destination="PC1-lP-ZQa" id="CrK-mU-Efu"/>
                     </connections>

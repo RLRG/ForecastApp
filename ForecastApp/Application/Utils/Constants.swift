@@ -38,4 +38,12 @@ struct Constants {
         /// TODO: Description
         static let WeatherRangeCell = "WeatherRangeCell"
     }
+    
+    /**
+     TODO: Description
+    */
+    struct Storyboard {
+        /// TODO: Description
+        static let Main = "Main"
+    }
 }

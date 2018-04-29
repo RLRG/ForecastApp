@@ -12,7 +12,6 @@
 		371FF5F620930B3A00B6E896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371FF5F520930B3A00B6E896 /* Assets.xcassets */; };
 		371FF5F920930B3A00B6E896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371FF5F720930B3A00B6E896 /* LaunchScreen.storyboard */; };
 		371FF60420930B3A00B6E896 /* ForecastAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF60320930B3A00B6E896 /* ForecastAppTests.swift */; };
-		371FF61820930C1700B6E896 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF61720930C1700B6E896 /* RootViewController.swift */; };
 		371FF61C20930CA500B6E896 /* Info_PRO.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371FF61B20930CA500B6E896 /* Info_PRO.plist */; };
 		371FF61E20930CAE00B6E896 /* Info_LAB.plist in Resources */ = {isa = PBXBuildFile; fileRef = 371FF61D20930CAE00B6E896 /* Info_LAB.plist */; };
 		371FF62020930D1100B6E896 /* WeatherResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF61F20930D1100B6E896 /* WeatherResult.swift */; };
@@ -61,7 +60,6 @@
 		371FF6772093148C00B6E896 /* ObservableExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6442093102C00B6E896 /* ObservableExt.swift */; };
 		371FF6782093148C00B6E896 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF63020930F1D00B6E896 /* Network.swift */; };
 		371FF67A2093148C00B6E896 /* ServerProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF62C20930EF900B6E896 /* ServerProviderProtocol.swift */; };
-		371FF67B2093148C00B6E896 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF61720930C1700B6E896 /* RootViewController.swift */; };
 		371FF67C2093148C00B6E896 /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF65C209313B300B6E896 /* UseCaseProvider.swift */; };
 		371FF67D2093148C00B6E896 /* DomainConvertibleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6412093102B00B6E896 /* DomainConvertibleType.swift */; };
 		371FF67E2093148C00B6E896 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF62920930E2300B6E896 /* Repository.swift */; };
@@ -124,7 +122,6 @@
 		371FF5FF20930B3A00B6E896 /* ForecastAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ForecastAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		371FF60320930B3A00B6E896 /* ForecastAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastAppTests.swift; sourceTree = "<group>"; };
 		371FF60520930B3A00B6E896 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		371FF61720930C1700B6E896 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		371FF61B20930CA500B6E896 /* Info_PRO.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_PRO.plist; sourceTree = "<group>"; };
 		371FF61D20930CAE00B6E896 /* Info_LAB.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info_LAB.plist; sourceTree = "<group>"; };
 		371FF61F20930D1100B6E896 /* WeatherResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResult.swift; sourceTree = "<group>"; };
@@ -336,7 +333,6 @@
 		371FF61320930B9300B6E896 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				371FF61720930C1700B6E896 /* RootViewController.swift */,
 				371FF694209315BF00B6E896 /* Main */,
 			);
 			path = Presentation;
@@ -863,7 +859,6 @@
 				371FF63120930F1D00B6E896 /* Network.swift in Sources */,
 				371FF63620930F4F00B6E896 /* API_PRO.swift in Sources */,
 				371FF62D20930EF900B6E896 /* ServerProviderProtocol.swift in Sources */,
-				371FF61820930C1700B6E896 /* RootViewController.swift in Sources */,
 				374618632095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */,
 				371FF6D120938EDD00B6E896 /* City.swift in Sources */,
 				371FF65D209313B300B6E896 /* UseCaseProvider.swift in Sources */,
@@ -920,7 +915,6 @@
 				371FF6772093148C00B6E896 /* ObservableExt.swift in Sources */,
 				371FF6782093148C00B6E896 /* Network.swift in Sources */,
 				371FF67A2093148C00B6E896 /* ServerProviderProtocol.swift in Sources */,
-				371FF67B2093148C00B6E896 /* RootViewController.swift in Sources */,
 				374618642095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */,
 				371FF6D220938EDD00B6E896 /* City.swift in Sources */,
 				371FF67C2093148C00B6E896 /* UseCaseProvider.swift in Sources */,
