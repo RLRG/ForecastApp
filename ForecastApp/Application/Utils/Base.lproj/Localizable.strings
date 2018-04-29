@@ -13,3 +13,9 @@
 
 /* General error of the system */
 "It has not been possible to update the Weather information. Please, check if you have Internet connection and try again." = "It has not been possible to update the Weather information. Please, check if you have Internet connection and try again.";
+
+/* Operation location error */
+"Operation location error" = "Operation location error";
+
+/* Operation location error */
+"Please, check that you have allowed your location services and try again" = "Please, check that you have allowed your location services and try again";
