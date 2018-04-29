@@ -28,10 +28,10 @@ class MainPresenter {
     }
     /// The current ViewState of the UIViewController attached - MainVC
     private var currentViewState : MainViewState
-    
+    /// WeatherResult object which is sent to the view to be displayed
+    private var currentWeatherResult: WeatherResult?
     /// SearchWeather use case abstraction - Interactor - used to get the weather data
     private let getWeatherForecastUseCase: SearchWeatherProtocol
-    
     /// Bag to dispose added disposables [RxSwift]
     private let disposeBag = DisposeBag()
     
@@ -68,6 +68,7 @@ class MainPresenter {
             .getWeatherForecast(withName: nil, withLat: 0.0, withLon: 0.0) // TODO: Set appropriate parameter values
             .subscribe(
                 onNext: { weatherResult in
+                    self.currentWeatherResult = weatherResult
                     self.currentViewState = MainViewState.displayWeatherInfo(weatherResult: weatherResult)
                     self.mainViewState.onNext(self.currentViewState)
             },
@@ -75,6 +76,19 @@ class MainPresenter {
                     self.displayError(with: UIMessages.errorGeneralTitle, and: UIMessages.errorGeneral)
             })
             .disposed(by: self.disposeBag)
+    }
+    
+    /**
+     Configure weatherRange cells for WeatherRangesTableView
+     - Parameter cell: the corresponding cell to be displayed in the UI
+     - Parameter row: the row number to get the needed data
+     */
+    func configure(cell: WeatherRangeCell, forRowAt row: Int) {
+        guard let weatherResult = self.currentWeatherResult else {
+            return
+        }
+        let weatherRange = weatherResult.weatherRanges[row]
+        cell.display(weatherRange: weatherRange)
     }
     
     /**

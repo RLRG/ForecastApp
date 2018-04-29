@@ -92,6 +92,14 @@
 		371FF6DF209512AC00B6E896 /* RMWeatherRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */; };
 		371FF6E12095247B00B6E896 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6E02095247B00B6E896 /* MainViewState.swift */; };
 		371FF6E22095247B00B6E896 /* MainViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6E02095247B00B6E896 /* MainViewState.swift */; };
+		371FF6E420952AA300B6E896 /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6E320952AA300B6E896 /* AlertsManager.swift */; };
+		371FF6E520952AA300B6E896 /* AlertsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6E320952AA300B6E896 /* AlertsManager.swift */; };
+		37461860209533D60008B9C4 /* WeatherRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746185F209533D60008B9C4 /* WeatherRangeCell.swift */; };
+		37461861209533D60008B9C4 /* WeatherRangeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746185F209533D60008B9C4 /* WeatherRangeCell.swift */; };
+		374618632095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374618622095340C0008B9C4 /* WeatherRangeCellProtocol.swift */; };
+		374618642095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374618622095340C0008B9C4 /* WeatherRangeCellProtocol.swift */; };
+		37461866209542820008B9C4 /* WeatherRangesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37461865209542820008B9C4 /* WeatherRangesTableView.swift */; };
+		37461867209542820008B9C4 /* WeatherRangesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37461865209542820008B9C4 /* WeatherRangesTableView.swift */; };
 		3F5A5C01D7B6D8E1509A491D /* Pods_ForecastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */; };
 		66686BF5CAAE59F292D01CF9 /* Pods_ForecastAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */; };
 		919F687560B5393E37CC8CB2 /* Pods_ForecastAppLAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */; };
@@ -159,6 +167,10 @@
 		371FF6DA2095129D00B6E896 /* RMCity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCity.swift; sourceTree = "<group>"; };
 		371FF6DD209512AC00B6E896 /* RMWeatherRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMWeatherRange.swift; sourceTree = "<group>"; };
 		371FF6E02095247B00B6E896 /* MainViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewState.swift; sourceTree = "<group>"; };
+		371FF6E320952AA300B6E896 /* AlertsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsManager.swift; sourceTree = "<group>"; };
+		3746185F209533D60008B9C4 /* WeatherRangeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRangeCell.swift; sourceTree = "<group>"; };
+		374618622095340C0008B9C4 /* WeatherRangeCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRangeCellProtocol.swift; sourceTree = "<group>"; };
+		37461865209542820008B9C4 /* WeatherRangesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRangesTableView.swift; sourceTree = "<group>"; };
 		55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.release.xcconfig"; sourceTree = "<group>"; };
 		5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.debug.xcconfig"; sourceTree = "<group>"; };
 		72416FF5F09C27E2CD9C4605 /* Pods-ForecastAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppTests/Pods-ForecastAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -315,6 +327,7 @@
 				371FF64E209310BD00B6E896 /* Constants.swift */,
 				371FF650209310CD00B6E896 /* UIMessages.swift */,
 				371FF6562093110500B6E896 /* Localizable.strings */,
+				371FF6E320952AA300B6E896 /* AlertsManager.swift */,
 			);
 			name = Utils;
 			path = Application/Utils;
@@ -482,6 +495,9 @@
 			children = (
 				371FF5F220930B3900B6E896 /* Main.storyboard */,
 				371FF6A12093168D00B6E896 /* MainVC.swift */,
+				37461865209542820008B9C4 /* WeatherRangesTableView.swift */,
+				374618622095340C0008B9C4 /* WeatherRangeCellProtocol.swift */,
+				3746185F209533D60008B9C4 /* WeatherRangeCell.swift */,
 				371FF6E02095247B00B6E896 /* MainViewState.swift */,
 			);
 			path = View;
@@ -824,6 +840,7 @@
 				371FF65F2093145500B6E896 /* SearchWeatherUseCase.swift in Sources */,
 				371FF6592093134100B6E896 /* Application.swift in Sources */,
 				371FF64F209310BD00B6E896 /* Constants.swift in Sources */,
+				371FF6E420952AA300B6E896 /* AlertsManager.swift in Sources */,
 				371FF651209310CD00B6E896 /* UIMessages.swift in Sources */,
 				371FF64C2093104D00B6E896 /* UserDefaultsKeys.swift in Sources */,
 				371FF6DE209512AC00B6E896 /* RMWeatherRange.swift in Sources */,
@@ -839,6 +856,7 @@
 				371FF64020930FF000B6E896 /* RMWeatherResult.swift in Sources */,
 				371FF62220930D2900B6E896 /* Location.swift in Sources */,
 				371FF5EF20930B3900B6E896 /* AppDelegate.swift in Sources */,
+				37461860209533D60008B9C4 /* WeatherRangeCell.swift in Sources */,
 				371FF63A20930FB000B6E896 /* RealmRepo.swift in Sources */,
 				371FF6492093102C00B6E896 /* ObservableExt.swift in Sources */,
 				371FF6982093160500B6E896 /* MainPresenter.swift in Sources */,
@@ -846,6 +864,7 @@
 				371FF63620930F4F00B6E896 /* API_PRO.swift in Sources */,
 				371FF62D20930EF900B6E896 /* ServerProviderProtocol.swift in Sources */,
 				371FF61820930C1700B6E896 /* RootViewController.swift in Sources */,
+				374618632095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */,
 				371FF6D120938EDD00B6E896 /* City.swift in Sources */,
 				371FF65D209313B300B6E896 /* UseCaseProvider.swift in Sources */,
 				371FF6462093102C00B6E896 /* DomainConvertibleType.swift in Sources */,
@@ -853,6 +872,7 @@
 				371FF63420930F4000B6E896 /* Urls.swift in Sources */,
 				371FF6E12095247B00B6E896 /* MainViewState.swift in Sources */,
 				371FF6D8209394C000B6E896 /* WeatherRange.swift in Sources */,
+				37461866209542820008B9C4 /* WeatherRangesTableView.swift in Sources */,
 				371FF6DB2095129D00B6E896 /* RMCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -877,6 +897,7 @@
 				371FF6642093148C00B6E896 /* SearchWeatherUseCase.swift in Sources */,
 				371FF6652093148C00B6E896 /* Application.swift in Sources */,
 				371FF6662093148C00B6E896 /* API_LAB.swift in Sources */,
+				371FF6E520952AA300B6E896 /* AlertsManager.swift in Sources */,
 				371FF6672093148C00B6E896 /* Constants.swift in Sources */,
 				371FF6682093148C00B6E896 /* UIMessages.swift in Sources */,
 				371FF6DF209512AC00B6E896 /* RMWeatherRange.swift in Sources */,
@@ -892,6 +913,7 @@
 				371FF6722093148C00B6E896 /* WeatherResult.swift in Sources */,
 				371FF6732093148C00B6E896 /* RMWeatherResult.swift in Sources */,
 				371FF6742093148C00B6E896 /* Location.swift in Sources */,
+				37461861209533D60008B9C4 /* WeatherRangeCell.swift in Sources */,
 				371FF6752093148C00B6E896 /* AppDelegate.swift in Sources */,
 				371FF6762093148C00B6E896 /* RealmRepo.swift in Sources */,
 				371FF6992093160500B6E896 /* MainPresenter.swift in Sources */,
@@ -899,6 +921,7 @@
 				371FF6782093148C00B6E896 /* Network.swift in Sources */,
 				371FF67A2093148C00B6E896 /* ServerProviderProtocol.swift in Sources */,
 				371FF67B2093148C00B6E896 /* RootViewController.swift in Sources */,
+				374618642095340C0008B9C4 /* WeatherRangeCellProtocol.swift in Sources */,
 				371FF6D220938EDD00B6E896 /* City.swift in Sources */,
 				371FF67C2093148C00B6E896 /* UseCaseProvider.swift in Sources */,
 				371FF67D2093148C00B6E896 /* DomainConvertibleType.swift in Sources */,
@@ -906,6 +929,7 @@
 				371FF67F2093148C00B6E896 /* Urls.swift in Sources */,
 				371FF6E22095247B00B6E896 /* MainViewState.swift in Sources */,
 				371FF6D9209394C000B6E896 /* WeatherRange.swift in Sources */,
+				37461867209542820008B9C4 /* WeatherRangesTableView.swift in Sources */,
 				371FF6DC2095129D00B6E896 /* RMCity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1157,6 +1181,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DForecastAppLAB";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastAppLAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1176,6 +1201,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DForecastAppLAB";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastAppLAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

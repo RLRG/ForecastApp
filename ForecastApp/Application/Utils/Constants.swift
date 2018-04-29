@@ -22,4 +22,20 @@ struct Constants {
         /// The main name for the Realm repository.
         static let realmRepoName = "com.CleanArchitectureRxSwift.RealmRepo"
     }
+    
+    /**
+     This struct includes labels for buttons
+    */
+    struct Button {
+        /// Label for "OK" button
+        static let OK = "OK"
+    }
+    
+    /**
+     TODO: Description
+    */
+    struct TableViewCell {
+        /// TODO: Description
+        static let WeatherRangeCell = "WeatherRangeCell"
+    }
 }
