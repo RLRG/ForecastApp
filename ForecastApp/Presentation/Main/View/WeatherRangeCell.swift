@@ -32,7 +32,7 @@ extension WeatherRangeCell : WeatherRangeCellProtocol {
      - Parameter weatherRange: the information to be displayed in each cell
      */
     func display(weatherRange: WeatherRange) {
-        self.timeLabel.text = String(weatherRange.startingTime) // TODO: Format the time label !
+        self.timeLabel.text = Date.dateToDateString(start: weatherRange.startingTime)
         self.weatherIcon.image = UIImage(named: weatherRange.weatherIcon)
         self.temperatureMax.text = String(weatherRange.temperatureMax)
         self.temperatureMin.text = String(weatherRange.temperatureMin)

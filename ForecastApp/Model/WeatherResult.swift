@@ -9,7 +9,9 @@
 import Foundation
 
 /**
- TODO: Description
+ WeatherResult
+ 
+ Model/Logic entity which contains all the weather forecast data.
  */
 public struct WeatherResult {
     let city: City

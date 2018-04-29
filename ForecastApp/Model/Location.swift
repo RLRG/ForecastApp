@@ -9,7 +9,9 @@
 import Foundation
 
 /**
- TODO: Description
+ Location
+ 
+ Model/Logic entity which contains the lat/lon data.
  */
 public struct Location {
     let lat: Double

@@ -17,7 +17,7 @@ import SVProgressHUD
 /**
  MainVC
  
- TODO: Description
+ This ViewController is the main screen to be presented in the app whose main purpose is to display the received weather forecast information.
  */
 class MainVC: UIViewController {
     
@@ -48,12 +48,12 @@ class MainVC: UIViewController {
     /// Table view to display the WeatherRanges
     @IBOutlet weak var weatherTableView: UITableView!
     
-    /// TODO: Description
+    /// LocationManager property responsible for getting the current location
     var locationManager: CLLocationManager?
-    /// TODO: Description
+    /// The last location received from the LocationManager, ie., the current location
     var lastLocation: CLLocation?
     
-    /// TODO: Description
+    /// The last weather forecast data to be shown.
     var currentWeatherResult: WeatherResult?
     
     /**
@@ -123,14 +123,14 @@ class MainVC: UIViewController {
      */
     func displayLoadingView() {
         SVProgressHUD.setDefaultAnimationType(.native)
-        SVProgressHUD.setBackgroundColor(UIColor.purple)
+        SVProgressHUD.setBackgroundColor(UIColor.darkGray)
         SVProgressHUD.setForegroundColor(UIColor.white)
         SVProgressHUD.setDefaultMaskType(.gradient)
         SVProgressHUD.show()
     }
     
     /**
-     TODO: Description
+     Responsible for updating the User Interface to show the weather forecast info to the user.
     */
     func updateUI() {
         SVProgressHUD.dismiss()
@@ -138,7 +138,7 @@ class MainVC: UIViewController {
             // Main info
             cityLabel.text = weather.city.name
             mainTemperatureLabel.text = String(format: "%.1f", weather.weatherRanges[0].temperatureAverage) + " ºC"
-            mainTimeframeLabel.text = String(weather.weatherRanges[0].startingTime)
+            mainTimeframeLabel.text = Date.dateToDateString(start: weather.weatherRanges[0].startingTime)
             mainIconWeather.image = UIImage(named: weather.weatherRanges[0].weatherIcon)
             mainTemperatureMax.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMax)
             mainTemperatureMin.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMin)
@@ -164,15 +164,15 @@ class MainVC: UIViewController {
     // MARK: - Actions (UIViewController -> Presenter)
     
     /**
-     TODO: Description
-     - Parameter sender:
+     Refresh button action allowing to get updated information about the weather forecast.
+     - Parameter sender: refresh bar button
     */
     @IBAction func refreshAction(_ sender: UIBarButtonItem) {
         if let lat = lastLocation?.coordinate.latitude,
             let lon = lastLocation?.coordinate.longitude {
             presenter.getWeatherForecastForCurrentLocation(withLat: lat, withLon: lon)
         } else {
-            AlertsManager.alert(caller: self, message: "Please, check that you have allowed your location services and try again", title: "Operation error") {} // TODO: Remove constants
+            presenter.displayError(with: UIMessages.errorLocationServicesTitle, and: UIMessages.errorLocationServices)
         }
     }
     

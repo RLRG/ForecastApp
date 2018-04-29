@@ -9,7 +9,9 @@
 import Foundation
 
 /**
- TODO: Description
+ City
+ 
+ Model/Logic entity which contains the name of the city and the last time requested.
  */
 public struct City {
     let name: String

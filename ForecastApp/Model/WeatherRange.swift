@@ -9,10 +9,12 @@
 import Foundation
 
 /**
- TODO: Description
+ WeatherRange
+ 
+ Model/Logic entity which contains the information for a 3-hour period of time
  */
 public struct WeatherRange {
-    let startingTime: Int // IMPROVEMENT: Convert to Date. Now it is in UNIX TIME
+    let startingTime: Date
     let temperatureAverage: Double
     let temperatureMin: Double
     let temperatureMax: Double

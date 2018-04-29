@@ -58,7 +58,7 @@ class MainPresenter {
         self.mainViewState.onNext(self.currentViewState)
         
         getWeatherForecastUseCase
-            .getWeatherForecast(withName: cityName, withLat: 0.0, withLon: 0.0) // TODO: Set appropriate parameter values
+            .getWeatherForecast(withName: cityName, withLat: 0.0, withLon: 0.0)
             .subscribe(
                 onNext: { weatherResult in
                     self.currentWeatherResult = weatherResult

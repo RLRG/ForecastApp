@@ -32,18 +32,18 @@ struct Constants {
     }
     
     /**
-     TODO: Description
+     This struct includes identifiers for the cells used in tableViews.
     */
     struct TableViewCell {
-        /// TODO: Description
+        /// Identifier for the WeatherCell used in the main screen
         static let WeatherRangeCell = "WeatherRangeCell"
     }
     
     /**
-     TODO: Description
+     This struct includes identifiers for the storyboards of the project.
     */
     struct Storyboard {
-        /// TODO: Description
+        /// Identifier for the Main storyboard of the app.
         static let Main = "Main"
     }
 }

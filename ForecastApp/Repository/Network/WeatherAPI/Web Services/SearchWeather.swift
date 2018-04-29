@@ -11,26 +11,28 @@ import RxSwift
 import ObjectMapper
 
 /**
- TODO: Description
+ SearchWeather
+ 
+ Class responsible for calling the web service to get the weather forecast information.
  */
 class SearchWeather {
-    /// TODO: Description
+    /// Property used to call the HTTP methods and receive the corresponding WeatherResult data.
     private let network: Network<WeatherResult>
     
     /**
-     TODO: Description
-     - Parameter network:
+     Initialization of the SearchWeather class
+     - Parameter network: This object is used to call the HTTP methods and receive the corresponding WeatherResult data.
      */
     init(network: Network<WeatherResult>) {
         self.network = network
     }
     
     /**
-     TODO: Description
-     - Parameter name:
-     - Parameter lat:
-     - Parameter lon:
-     - Returns:
+     Request the weather forecast data to the server by calling the corresponding web service.
+     - Parameter name: the optional name of the city to get the weather forecast from.
+     - Parameter lat: the latitude used to get the weather forecast from.
+     - Parameter lon: the longitude used to get the weather forecast from.
+     - Returns: An Observable with objects of type "WeatherResult"
      */
     func getWeatherResult(withName name: String?, withLat lat: Double, withLon lon: Double) -> Observable<WeatherResult> {
         if let cityName = name, cityName != "" {
@@ -44,7 +46,7 @@ class SearchWeather {
 }
 
 /**
- TODO: Description
+ WeatherResult mapping for the result received from the searchWeather web service. From JSON to logic entity.
  */
 extension WeatherResult: ImmutableMappable {
     /**
@@ -76,7 +78,7 @@ extension WeatherResult: ImmutableMappable {
 }
 
 /**
- TODO: Description
+ WeatherRange mapping for the result received from the searchWeather web service. From JSON to logic entity.
  */
 extension WeatherRange: ImmutableMappable {
     /**
@@ -85,7 +87,11 @@ extension WeatherRange: ImmutableMappable {
     public init(map: Map) throws {
         
         // StartingTime
-        startingTime = try map.value("dt") // IMPROVEMENT: Conversion to Date !
+        if let time = map.JSON["dt"] { // swiftlint:disable:this force_cast
+            startingTime = Date(timeIntervalSince1970: TimeInterval(exactly: time as! Int)!) // swiftlint:disable:this force_cast
+        } else {
+            startingTime = Date()
+        }
         
         // Temperatures
         if let mainInfo = map.JSON["main"] as! [String:Any]? { // swiftlint:disable:this force_cast

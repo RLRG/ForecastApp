@@ -10,19 +10,25 @@ import Foundation
 import CoreLocation
 
 /**
- TODO: Description
+ MainVC extension responsible for getting the locations of the current user.
  */
 extension MainVC: CLLocationManagerDelegate {
     
     /**
-     TODO: Description
+     Tells the delegate that the location manager was unable to retrieve a location value.
+     manager
+     - Parameter manager: The location manager object that was unable to retrieve the location.
+     error
+     - Parameter error: The error object containing the reason the location or heading could not be retrieved.
     */
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        AlertsManager.alert(caller: self, message: "Please, check that you have allowed your location services", title: "Operation error") {} // TODO: Remove constants
+        presenter.displayError(with: UIMessages.errorLocationServicesTitle, and: UIMessages.errorLocationServices)
     }
     
     /**
-     TODO: Description
+     Tells the delegate that new location data is available.
+     - Parameter manager: The location manager object that generated the update event.
+     - Parameter locations: An array of CLLocation objects containing the location data.
      */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last

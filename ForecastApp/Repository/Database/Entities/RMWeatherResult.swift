@@ -18,7 +18,7 @@ import Realm
 final class RMWeatherResult: Object {
     @objc dynamic var city: RMCity!
     @objc dynamic var location: RMLocation!
-    // @objc dynamic var weatherRanges: [RMWeatherRange]! // TODO: Pending to fix!
+    var weatherRanges = List<RMWeatherRange>()
 }
 
 /**
@@ -26,9 +26,13 @@ final class RMWeatherResult: Object {
  */
 extension RMWeatherResult: DomainConvertibleType {
     func asDomain() -> WeatherResult {
+        var tempWeatherRanges = [WeatherRange]()
+        for rmWeatherRange in weatherRanges {
+            tempWeatherRanges.append(rmWeatherRange.asDomain())
+        }
         return WeatherResult(city: city.asDomain(),
                              location: location.asDomain(),
-                             weatherRanges: []) // TODO: Pending to fix!
+                             weatherRanges: tempWeatherRanges)
     }
 }
 
@@ -37,10 +41,14 @@ extension RMWeatherResult: DomainConvertibleType {
  */
 extension WeatherResult: RealmRepresentable {
     func asRealm() -> RMWeatherResult {
+        let tempRMWeatherRanges = List<RMWeatherRange>()
+        for weatherRange in weatherRanges {
+            tempRMWeatherRanges.append(weatherRange.asRealm())
+        }
         return RMWeatherResult.build { object in
             object.city = city.asRealm()
             object.location = location.asRealm()
-            // object.weatherRanges = weatherRanges // TODO: Pending to fix!
+            object.weatherRanges = tempRMWeatherRanges
         }
     }
 }

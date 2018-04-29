@@ -14,7 +14,7 @@ import UIKit
 // MARK: - Table View data source
 
 /**
- TODO: Description
+ This MainVC extension helps to populate the weatherTableView in the main screen.
  */
 extension MainVC: UITableViewDataSource {
     

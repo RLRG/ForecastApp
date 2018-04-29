@@ -16,7 +16,7 @@ import Realm
  Realm database entity for the the weather ranges
  */
 final class RMWeatherRange: Object {
-    @objc dynamic var startingTime: Int = 0 // IMPROVEMENT: Convert to Date. Now it is in UNIX TIME
+    @objc dynamic var startingTime: Date = Date()
     @objc dynamic var temperatureAverage: Double = 0.0
     @objc dynamic var temperatureMin: Double = 0.0
     @objc dynamic var temperatureMax: Double = 0.0
