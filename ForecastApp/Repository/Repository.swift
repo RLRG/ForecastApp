@@ -90,7 +90,8 @@ class Repository {
     // MARK: WeatherResult
     
     /**
-     TODO: Description
+     This function gets the last WeatherResult object stored in the local database.
+     - Returns: An Observable with WeatherResult events.
     */
     func getLastWeatherForecastFromDB() -> Observable<WeatherResult> {
         return weatherResults.query()
