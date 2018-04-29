@@ -47,8 +47,8 @@ final class Network<T: ImmutableMappable> {
     func getRequest(_ path: String, rootJSONEntity jsonKey: String) -> Observable<T> {
         let absolutePath = "\(endPoint)\(path)"
         return RxAlamofire
-            .json(.get, absolutePath) // IMPROVEMENT: Refactor GET functions to improve efficiency here ! I'm sure it can be done !
-            //.debug()
+            .json(.get, absolutePath)
+            .debug()
             .observeOn(scheduler)
             .map({ json -> T in
                 var jsonData: [String : Any] = json as! [String : Any] // swiftlint:disable:this force_cast
@@ -92,7 +92,7 @@ final class Network<T: ImmutableMappable> {
     func postRequest(_ path: String, parameters: [String: Any]?) -> Observable<T> {
         let absolutePath = "\(endPoint)\(path)"
         return RxAlamofire
-            .json(.post, absolutePath, parameters: parameters) // IMPROVEMENT: Refactor GET functions to improve efficiency here ! I'm sure it can be done !
+            .json(.post, absolutePath, parameters: parameters)
             //.debug()
             .observeOn(scheduler)
             .map({ json -> T in

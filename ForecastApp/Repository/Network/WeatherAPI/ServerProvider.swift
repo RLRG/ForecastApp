@@ -40,11 +40,9 @@ class ServerProvider : ServerProviderProtocol {
      - Returns: An Observable with WeatherResult objects
     */
     func getWeatherForecast(withName name: String?, withLat lat: Double, withLon lon: Double) -> Observable<WeatherResult> {
-        return Observable<WeatherResult>.create({ (observer) -> Disposable in
-            // TODO: getWeatherForecast()
-            observer.onCompleted()
-            return Disposables.create()
-        })
+        let network = Network<WeatherResult>(apiEndpoint)
+        let webService = SearchWeather(network: network)
+        return webService.getWeatherResult(withName:name, withLat:lat, withLon:lon)
     }
     
 }

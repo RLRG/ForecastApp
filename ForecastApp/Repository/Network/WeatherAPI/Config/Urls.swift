@@ -16,5 +16,6 @@ This struct lists all the web services offered by the server of the system. The 
 struct Urls {
     
     // MARK: - Weather
-    static let searchWeather = "forecast" // HTTP method: GET
+    /// URL full example: "https://api.openweathermap.org/data/2.5/forecast?APPID=81ad19519a94fc70c162cd0b4d9e564d&lat=35&lon=139"
+    static let searchWeatherMethod = "forecast" // HTTP method: GET
 }

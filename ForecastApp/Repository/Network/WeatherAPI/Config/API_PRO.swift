@@ -14,5 +14,8 @@ import Foundation
  This struct provide the endpoint URL for the Weather API for the production environment.
  */
 struct API {
-    static let endpoint = "api.openweathermap.org/data/2.5/"
+    /// URL for OpenWeatherMap API
+    static let endpoint = "https://api.openweathermap.org/data/2.5/"
+    /// The APP identifier to get data from the OpenWeather API
+    static let APPID = "?APPID=81ad19519a94fc70c162cd0b4d9e564d"
 }
