@@ -70,7 +70,6 @@
 		371FF6852093148C00B6E896 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371FF5F720930B3A00B6E896 /* LaunchScreen.storyboard */; };
 		371FF6862093148C00B6E896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 371FF5F520930B3A00B6E896 /* Assets.xcassets */; };
 		371FF6872093148C00B6E896 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 371FF5F220930B3900B6E896 /* Main.storyboard */; };
-		371FF6912093150C00B6E896 /* SearchWeatherUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6902093150C00B6E896 /* SearchWeatherUseCaseTests.swift */; };
 		371FF6932093155100B6E896 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6922093155100B6E896 /* TestData.swift */; };
 		371FF6982093160500B6E896 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6972093160500B6E896 /* MainPresenter.swift */; };
 		371FF6992093160500B6E896 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 371FF6972093160500B6E896 /* MainPresenter.swift */; };
@@ -155,7 +154,6 @@
 		371FF65E2093145500B6E896 /* SearchWeatherUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWeatherUseCase.swift; sourceTree = "<group>"; };
 		371FF6602093146B00B6E896 /* SearchWeatherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWeatherProtocol.swift; sourceTree = "<group>"; };
 		371FF68B2093148C00B6E896 /* ForecastAppLAB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ForecastAppLAB.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		371FF6902093150C00B6E896 /* SearchWeatherUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWeatherUseCaseTests.swift; sourceTree = "<group>"; };
 		371FF6922093155100B6E896 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		371FF6972093160500B6E896 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		371FF69D2093166300B6E896 /* MainVCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVCTests.swift; sourceTree = "<group>"; };
@@ -278,7 +276,6 @@
 				371FF60320930B3A00B6E896 /* ForecastAppTests.swift */,
 				371FF68F209314CD00B6E896 /* Config */,
 				371FF68E209314C500B6E896 /* Presentation */,
-				371FF68D209314B800B6E896 /* Interactor */,
 			);
 			path = ForecastAppTests;
 			sourceTree = "<group>";
@@ -459,14 +456,6 @@
 				371FF6452093102C00B6E896 /* RunLoopThreadScheduler.swift */,
 			);
 			path = "Conversion&Utils";
-			sourceTree = "<group>";
-		};
-		371FF68D209314B800B6E896 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				371FF6902093150C00B6E896 /* SearchWeatherUseCaseTests.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		371FF68E209314C500B6E896 /* Presentation */ = {
@@ -890,7 +879,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				371FF6932093155100B6E896 /* TestData.swift in Sources */,
-				371FF6912093150C00B6E896 /* SearchWeatherUseCaseTests.swift in Sources */,
 				371FF6A02093167900B6E896 /* MainPresenterTests.swift in Sources */,
 				371FF60420930B3A00B6E896 /* ForecastAppTests.swift in Sources */,
 				371FF69E2093166300B6E896 /* MainVCTests.swift in Sources */,

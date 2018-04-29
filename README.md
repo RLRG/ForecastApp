@@ -66,6 +66,7 @@ This paragraph includes all the resources used to create this project, including
 
 ## 3. Future work & Improvements
 Among other things:
+- Add more unit tests. I have covered part of the view and almost the whole presenter layer.
 - Analytics, Bug reporting & Logging. We could have used Firebase for this task.
 - Add the "look city weather forecast" functionality, which is currently half developed. We only need to develop the UI part: add a new alert to enter the city name and, for example, add several screens having each of them one location.
 - About screen/info: including the attributions for the third-party frameworks used, the version of the app and so on.
