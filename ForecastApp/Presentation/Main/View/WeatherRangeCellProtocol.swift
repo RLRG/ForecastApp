@@ -14,5 +14,9 @@ import UIKit
  Protocol used to present each cell. We do not want to include the logic in the view.
  */
 protocol WeatherRangeCellProtocol {
+    /**
+     Displays configured cell
+     - Parameter weatherRange: the information to be displayed in each cell
+     */
     func display(weatherRange: WeatherRange)
 }

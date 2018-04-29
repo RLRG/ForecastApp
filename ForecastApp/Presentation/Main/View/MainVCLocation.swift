@@ -33,5 +33,12 @@ extension MainVC: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let newLocation = locations.last
         lastLocation = newLocation
+
+        if self.isFirstOpen,
+            let lat = lastLocation?.coordinate.latitude,
+            let lon = lastLocation?.coordinate.longitude {
+            presenter.getWeatherForecastForCurrentLocation(withLat: lat, withLon: lon)
+            self.isFirstOpen = false
+        }
     }
 }

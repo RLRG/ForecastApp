@@ -18,6 +18,10 @@ class WeatherRangeCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     /// The weather icon to display
     @IBOutlet weak var weatherIcon: UIImageView!
+    /// The wind speed (m/s) label
+    @IBOutlet weak var windSpeed: UILabel!
+    /// The raining probability label
+    @IBOutlet weak var precipitationChance: UILabel!
     /// The maximum temperature
     @IBOutlet weak var temperatureMax: UILabel!
     /// The minimum temperature
@@ -34,7 +38,13 @@ extension WeatherRangeCell : WeatherRangeCellProtocol {
     func display(weatherRange: WeatherRange) {
         self.timeLabel.text = Date.dateToDateString(start: weatherRange.startingTime)
         self.weatherIcon.image = UIImage(named: weatherRange.weatherIcon)
-        self.temperatureMax.text = String(weatherRange.temperatureMax)
-        self.temperatureMin.text = String(weatherRange.temperatureMin)
+        self.windSpeed.text = String(weatherRange.windSpeed) + "m/s"
+        if (weatherRange.precipitation != 0) {
+            self.precipitationChance.text = String(weatherRange.precipitation) + "%"
+        } else {
+            self.precipitationChance.text = ""
+        }
+        self.temperatureMax.text = String(format: "%.1f", weatherRange.temperatureMax)
+        self.temperatureMin.text = String(format: "%.1f", weatherRange.temperatureMin)
     }
 }

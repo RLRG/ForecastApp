@@ -34,12 +34,18 @@ class MainVC: UIViewController {
     @IBOutlet weak var refreshButton: UIBarButtonItem!
     /// The name of the current city
     @IBOutlet weak var cityLabel: UILabel!
+    /// Label indicating the last time we could update the information from the server.
+    @IBOutlet weak var updatedTimeLabel: UILabel!
     /// The average temperature for the current city/timeframe
     @IBOutlet weak var mainTemperatureLabel: UILabel!
     /// The current or the last updated timeframe
     @IBOutlet weak var mainTimeframeLabel: UILabel!
     /// The icon weather for the current city/timeframe
     @IBOutlet weak var mainIconWeather: UIImageView!
+    /// The speed of the wind (m/s) label
+    @IBOutlet weak var mainWindSpeed: UILabel!
+    /// The raining probability percentage
+    @IBOutlet weak var mainPrecipitationPercent: UILabel!
     /// The max temperature for the current city/timeframe
     @IBOutlet weak var mainTemperatureMax: UILabel!
     /// The min temperature for the current city/timeframe
@@ -52,6 +58,8 @@ class MainVC: UIViewController {
     var locationManager: CLLocationManager?
     /// The last location received from the LocationManager, ie., the current location
     var lastLocation: CLLocation?
+    /// Flag used to make the first data request only.
+    var isFirstOpen: Bool = true
     
     /// The last weather forecast data to be shown.
     var currentWeatherResult: WeatherResult?
@@ -74,8 +82,11 @@ class MainVC: UIViewController {
         // Set data source for the tableView
         self.weatherTableView.dataSource = self
         
+        // Initialize the flag to request the data with the first GPS location
+        self.isFirstOpen = true
+        
         // In-App Debugger
-        #if car_sharing_remourbanLAB
+        #if ForecastAppLAB
             debuggerButton.isEnabled = true
         #else
             debuggerButton.isEnabled = false
@@ -89,7 +100,7 @@ class MainVC: UIViewController {
      - Parameter sender: The UIBarButtonItem caller of the action
     */
     @IBAction func showFLEXDebugger(_ sender: UIBarButtonItem) {
-        #if car_sharing_remourbanLAB
+        #if ForecastAppLAB
             FLEXManager.shared().showExplorer()
         #endif
     }
@@ -137,9 +148,16 @@ class MainVC: UIViewController {
         if let weather = self.currentWeatherResult {
             // Main info
             cityLabel.text = weather.city.name
+            updatedTimeLabel.text = Date.updatedDateToDateString(date: weather.city.timeRequested)
             mainTemperatureLabel.text = String(format: "%.1f", weather.weatherRanges[0].temperatureAverage) + " ºC"
             mainTimeframeLabel.text = Date.dateToDateString(start: weather.weatherRanges[0].startingTime)
             mainIconWeather.image = UIImage(named: weather.weatherRanges[0].weatherIcon)
+            mainWindSpeed.text = String(format: "%.1f", weather.weatherRanges[0].windSpeed) + "m/s"
+            if (weather.weatherRanges[0].precipitation != 0) {
+                mainPrecipitationPercent.text = String(weather.weatherRanges[0].precipitation) + "%"
+            } else {
+                mainPrecipitationPercent.text = ""
+            }
             mainTemperatureMax.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMax)
             mainTemperatureMin.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMin)
             
