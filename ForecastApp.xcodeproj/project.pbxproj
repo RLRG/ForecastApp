@@ -1146,7 +1146,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
-				INFOPLIST_FILE = ForecastAppTests/Info.plist;
+				INFOPLIST_FILE = ForecastAppTests/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1168,7 +1168,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
-				INFOPLIST_FILE = ForecastAppTests/Info.plist;
+				INFOPLIST_FILE = ForecastAppTests/Config/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
