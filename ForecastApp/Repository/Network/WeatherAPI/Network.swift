@@ -48,7 +48,7 @@ final class Network<T: ImmutableMappable> {
         let absolutePath = "\(endPoint)\(path)"
         return RxAlamofire
             .json(.get, absolutePath)
-            .debug()
+            //.debug()
             .observeOn(scheduler)
             .map({ json -> T in
                 var jsonData: [String : Any] = json as! [String : Any] // swiftlint:disable:this force_cast

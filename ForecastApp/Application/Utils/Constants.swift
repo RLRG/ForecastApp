@@ -20,7 +20,7 @@ struct Constants {
     */
     struct AppInfo {
         /// The main name for the Realm repository.
-        static let realmRepoName = "com.CleanArchitectureRxSwift.RealmRepo"
+        static let realmRepoName = "com.CleanArchitectureRxSwift.RealmRepoForWeather"
     }
     
     /**

@@ -16,9 +16,14 @@ import Realm
  Realm database entity for WeatherResult
  */
 final class RMWeatherResult: Object {
+    @objc dynamic var weatherResultID: String = ""
     @objc dynamic var city: RMCity!
     @objc dynamic var location: RMLocation!
     var weatherRanges = List<RMWeatherRange>()
+    
+    override class func primaryKey() -> String? {
+        return "weatherResultID"
+    }
 }
 
 /**
@@ -30,7 +35,8 @@ extension RMWeatherResult: DomainConvertibleType {
         for rmWeatherRange in weatherRanges {
             tempWeatherRanges.append(rmWeatherRange.asDomain())
         }
-        return WeatherResult(city: city.asDomain(),
+        return WeatherResult(weatherResultID: weatherResultID,
+                             city: city.asDomain(),
                              location: location.asDomain(),
                              weatherRanges: tempWeatherRanges)
     }
@@ -46,6 +52,7 @@ extension WeatherResult: RealmRepresentable {
             tempRMWeatherRanges.append(weatherRange.asRealm())
         }
         return RMWeatherResult.build { object in
+            object.weatherResultID = weatherResultID
             object.city = city.asRealm()
             object.location = location.asRealm()
             object.weatherRanges = tempRMWeatherRanges

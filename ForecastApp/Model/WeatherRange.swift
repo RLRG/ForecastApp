@@ -14,6 +14,7 @@ import Foundation
  Model/Logic entity which contains the information for a 3-hour period of time
  */
 public struct WeatherRange {
+    let id: Int
     let startingTime: Date
     let temperatureAverage: Double
     let temperatureMin: Double

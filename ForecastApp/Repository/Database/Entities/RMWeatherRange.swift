@@ -16,6 +16,7 @@ import Realm
  Realm database entity for the the weather ranges
  */
 final class RMWeatherRange: Object {
+    @objc dynamic var id: Int = 0
     @objc dynamic var startingTime: Date = Date()
     @objc dynamic var temperatureAverage: Double = 0.0
     @objc dynamic var temperatureMin: Double = 0.0
@@ -24,6 +25,10 @@ final class RMWeatherRange: Object {
     @objc dynamic var windDegrees: Double = 0.0
     @objc dynamic var precipitation: Int = 0
     @objc dynamic var weatherIcon: String = ""
+    
+    override class func primaryKey() -> String? {
+        return "id"
+    }
 }
 
 /**
@@ -31,7 +36,8 @@ final class RMWeatherRange: Object {
  */
 extension RMWeatherRange: DomainConvertibleType {
     func asDomain() -> WeatherRange {
-        return WeatherRange(startingTime: startingTime,
+        return WeatherRange(id: id,
+                            startingTime: startingTime,
                             temperatureAverage: temperatureAverage,
                             temperatureMin: temperatureMin,
                             temperatureMax: temperatureMax,
@@ -48,6 +54,7 @@ extension RMWeatherRange: DomainConvertibleType {
 extension WeatherRange: RealmRepresentable {
     func asRealm() -> RMWeatherRange {
         return RMWeatherRange.build { object in
+            object.id = id
             object.startingTime = startingTime
             object.temperatureAverage = temperatureAverage
             object.temperatureMin = temperatureMin

@@ -71,6 +71,26 @@ class Repository {
      - Returns: An Observable with WeatherResult objects
      */
     func getWeatherForecast(withName name: String?, withLat lat: Double, withLon lon: Double) -> Observable<WeatherResult> {
-        return networkServerProvider.getWeatherForecast(withName:name, withLat:lat, withLon:lon)
+        
+        return Observable.of(getLastWeatherForecastFromDB().take(1), networkServerProvider.getWeatherForecast(withName:name, withLat:lat, withLon:lon).do(onNext: { (weatherResult) in
+            #if DEBUG
+            print("NETWORK - getWeatherForecast() successful.")
+            #endif
+
+            // Save the data in local DB when the network request response arrives
+            self.weatherResults.save(entity: weatherResult).subscribe().disposed(by: self.disposeBag) // TODO: FIX THIS !!
+        })).merge()
     }
+    
+    // MARK: - Local database
+    
+    // MARK: WeatherResult
+    
+    /**
+     TODO: Description
+    */
+    func getLastWeatherForecastFromDB() -> Observable<WeatherResult> {
+        return weatherResults.query()
+    }
+    
 }

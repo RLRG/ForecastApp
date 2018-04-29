@@ -14,6 +14,7 @@ import Foundation
  Model/Logic entity which contains all the weather forecast data.
  */
 public struct WeatherResult {
+    let weatherResultID: String
     let city: City
     let location: Location
     var weatherRanges: [WeatherRange]

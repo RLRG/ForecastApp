@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+/**
+ This struct includes the small pieces of information to be stored in the local sandbox of the app.
+ */
+struct UserDefaultsKeys {
+    // FOR NOW, THERE ARE NO SMALL PIECES OF DATA TO BE STORED.
+}

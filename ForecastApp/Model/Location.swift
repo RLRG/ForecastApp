@@ -14,6 +14,7 @@ import Foundation
  Model/Logic entity which contains the lat/lon data.
  */
 public struct Location {
+    let locationName: String
     let lat: Double
     let lon: Double
 }

@@ -16,8 +16,13 @@ import Realm
  Realm database entity for lat/lon location
  */
 final class RMLocation: Object {
+    @objc dynamic var locationName: String = ""
     @objc dynamic var lat: Double = 0
     @objc dynamic var lon: Double = 0
+    
+    override class func primaryKey() -> String? {
+        return "locationName"
+    }
 }
 
 /**
@@ -25,7 +30,8 @@ final class RMLocation: Object {
  */
 extension RMLocation: DomainConvertibleType {
     func asDomain() -> Location {
-        return Location(lat: lat,
+        return Location(locationName: locationName,
+                        lat: lat,
                         lon: lon)
     }
 }
@@ -36,6 +42,7 @@ extension RMLocation: DomainConvertibleType {
 extension Location: RealmRepresentable {
     func asRealm() -> RMLocation {
         return RMLocation.build { object in
+            object.locationName = locationName
             object.lat = lat
             object.lon = lon
         }

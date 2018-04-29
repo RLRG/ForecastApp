@@ -54,22 +54,25 @@ extension WeatherResult: ImmutableMappable {
     */
     public init(map: Map) throws {
         
-        // City
+        // ID & City
         if let cityInfo = map.JSON["city"] as! [String:Any]?, // swiftlint:disable:this force_cast
             let cityName = cityInfo["name"] {
+            weatherResultID = cityName as! String
             city = City(name: cityName as! String, timeRequested: Date()) // swiftlint:disable:this force_cast
         } else {
+            weatherResultID = ""
             city = City(name: "", timeRequested: Date())
         }
         
         // Location
         if let cityInfo = map.JSON["city"] as! [String:Any]?, // swiftlint:disable:this force_cast
+            let cityName = cityInfo["name"],
             let coord = cityInfo["coord"] as! [String:Any]?, // swiftlint:disable:this force_cast
             let coord_lat = coord["lat"],
             let coord_lon = coord["lon"] {
-            location = Location(lat: coord_lat as! Double, lon: coord_lon as! Double) // swiftlint:disable:this force_cast
+            location = Location(locationName: (cityName as! String), lat: coord_lat as! Double, lon: coord_lon as! Double) // swiftlint:disable:this force_cast
         } else {
-            location = Location(lat: 0, lon: 0)
+            location = Location(locationName: "", lat: 0, lon: 0)
         }
         
         // WeatherRange array
@@ -85,6 +88,13 @@ extension WeatherRange: ImmutableMappable {
      JSON -> Object
      */
     public init(map: Map) throws {
+        
+        // ID
+        if let time = map.JSON["dt"] { // swiftlint:disable:this force_cast
+            id = Int(TimeInterval(exactly: time as! Int)!) // swiftlint:disable:this force_cast
+        } else {
+            id = 0
+        }
         
         // StartingTime
         if let time = map.JSON["dt"] { // swiftlint:disable:this force_cast
