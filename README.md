@@ -49,6 +49,7 @@ This paragraph includes all the resources used to create this project, including
 | [Realm](https://github.com/realm/realm-cocoa) | Mobile database used to persist data of the app. |
 | [RxSwift](https://github.com/ReactiveX/RxSwift) | Reactive Programming in Swift used mainly to communicate layers of the app. |
 | [Travis CI](https://travis-ci.org/) | Continuous Integration used to build the project and run unit tests automatically. |
+| [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) | A clean and lightweight progress HUD for your iOS and tvOS app. |
 | Other | Other frameworks related to the ones already mentioned such as: RxRealm, RxTest, RxSwiftExt, RxAlamofire, ObjectMapper, QueryKit, RealmSwift (see project PodFile) |
 
 ### 2.2. APIs
