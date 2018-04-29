@@ -35,11 +35,10 @@ class SearchWeather {
     func getWeatherResult(withName name: String?, withLat lat: Double, withLon lon: Double) -> Observable<WeatherResult> {
         if let cityName = name, cityName != "" {
             // URL example: "https://api.openweathermap.org/data/2.5/?APPID=81ad19519a94fc70c162cd0b4d9e564d&lat=35&lon=139"
-            return network.getRequest("\(Urls.searchWeatherMethod)\(API.APPID)&q=\(cityName)", rootJSONEntity: "")
-            
+            return network.getRequest("\(Urls.searchWeatherMethod)\(API.APPID)&q=\(cityName)&units=metric", rootJSONEntity: "") // "units=metric" in order to have the temperature in Celsius degrees.
         } else {
             // URL example: "https://api.openweathermap.org/data/2.5/?APPID=81ad19519a94fc70c162cd0b4d9e564d&q=London,uk"
-            return network.getRequest("\(Urls.searchWeatherMethod)\(API.APPID)&lat=\(lat)&lon=\(lon)", rootJSONEntity: "")
+            return network.getRequest("\(Urls.searchWeatherMethod)\(API.APPID)&lat=\(lat)&lon=\(lon)&units=metric", rootJSONEntity: "") // "units=metric" in order to have the temperature in Celsius degrees.
         }
     }
 }
@@ -54,14 +53,16 @@ extension WeatherResult: ImmutableMappable {
     public init(map: Map) throws {
         
         // City
-        if let cityName = map.JSON["city.name"] {
+        if let cityInfo = map.JSON["city"] as! [String:Any]?, // swiftlint:disable:this force_cast
+            let cityName = cityInfo["name"] {
             city = City(name: cityName as! String, timeRequested: Date()) // swiftlint:disable:this force_cast
         } else {
             city = City(name: "", timeRequested: Date())
         }
         
         // Location
-        if let coord = map.JSON["city.coord"] as! [String:Any]?, // swiftlint:disable:this force_cast
+        if let cityInfo = map.JSON["city"] as! [String:Any]?, // swiftlint:disable:this force_cast
+            let coord = cityInfo["coord"] as! [String:Any]?, // swiftlint:disable:this force_cast
             let coord_lat = coord["lat"],
             let coord_lon = coord["lon"] {
             location = Location(lat: coord_lat as! Double, lon: coord_lon as! Double) // swiftlint:disable:this force_cast
@@ -87,16 +88,41 @@ extension WeatherRange: ImmutableMappable {
         startingTime = try map.value("dt") // IMPROVEMENT: Conversion to Date !
         
         // Temperatures
-        temperatureAverage = try map.value("main.temp")
-        temperatureMin = try map.value("main.temp_min")
-        temperatureMax = try map.value("main.temp_max")
+        if let mainInfo = map.JSON["main"] as! [String:Any]? { // swiftlint:disable:this force_cast
+            if let tempAvg = mainInfo["temp"] {
+                temperatureAverage = tempAvg as! Double // swiftlint:disable:this force_cast
+            } else { temperatureAverage = 0 }
+            if let tempMin = mainInfo["temp_min"] {
+                temperatureMin = tempMin as! Double // swiftlint:disable:this force_cast
+            } else { temperatureMin = 0 }
+            if let tempMax = mainInfo["temp_max"] {
+                temperatureMax = tempMax as! Double // swiftlint:disable:this force_cast
+            } else { temperatureMax = 0 }
+        } else {
+            temperatureAverage = 0
+            temperatureMin = 0
+            temperatureMax = 0
+        }
         
         // Wind
-        windSpeed = try map.value("wind.speed")
-        windDegrees = try map.value("wind.deg")
+        if let windInfo = map.JSON["wind"] as! [String:Any]? { // swiftlint:disable:this force_cast
+            if let speed = windInfo["speed"] {
+                windSpeed = speed as! Double // swiftlint:disable:this force_cast
+            } else { windSpeed = 0}
+            if let degrees = windInfo["deg"] {
+                windDegrees = degrees as! Double // swiftlint:disable:this force_cast
+            } else { windDegrees = 0}
+        } else {
+            windSpeed = 0
+            windDegrees = 0
+        }
         
         // Precipitation
-        precipitation = try map.value("clouds.all")
+        if let cloudsInfo = map.JSON["clouds"] as! [String:Any]? { // swiftlint:disable:this force_cast
+            if let all = cloudsInfo["all"] {
+                precipitation = all as! Int // swiftlint:disable:this force_cast
+            } else { precipitation = 0 }
+        } else { precipitation = 0 }
         
         // Weather Icon
         if let weatherObjects = map.JSON["weather"] as! NSArray?, // swiftlint:disable:this force_cast

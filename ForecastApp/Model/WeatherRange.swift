@@ -13,11 +13,11 @@ import Foundation
  */
 public struct WeatherRange {
     let startingTime: Int // IMPROVEMENT: Convert to Date. Now it is in UNIX TIME
-    let temperatureAverage: Float
-    let temperatureMin: Float
-    let temperatureMax: Float
-    let windSpeed: Float
-    let windDegrees: Float
+    let temperatureAverage: Double
+    let temperatureMin: Double
+    let temperatureMax: Double
+    let windSpeed: Double
+    let windDegrees: Double
     let precipitation: Int
     let weatherIcon: String
 }

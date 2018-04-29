@@ -71,6 +71,9 @@ class MainVC: UIViewController {
             locationManager?.startUpdatingLocation()
         }
         
+        // Set data source for the tableView
+        self.weatherTableView.dataSource = self
+        
         // In-App Debugger
         #if car_sharing_remourbanLAB
             debuggerButton.isEnabled = true
@@ -131,8 +134,18 @@ class MainVC: UIViewController {
     */
     func updateUI() {
         SVProgressHUD.dismiss()
-        // TODO: updateWeatherInfo() !!
-        print("TODO: updateWeatherInfo(weatherResult: WeatherResult) !!")
+        if let weather = self.currentWeatherResult {
+            // Main info
+            cityLabel.text = weather.city.name
+            mainTemperatureLabel.text = String(format: "%.1f", weather.weatherRanges[0].temperatureAverage) + " ºC"
+            mainTimeframeLabel.text = String(weather.weatherRanges[0].startingTime)
+            mainIconWeather.image = UIImage(named: weather.weatherRanges[0].weatherIcon)
+            mainTemperatureMax.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMax)
+            mainTemperatureMin.text = String(format: "%.1f", weather.weatherRanges[0].temperatureMin)
+            
+            // TableView
+            self.weatherTableView.reloadData()
+        }
     }
     
     /**

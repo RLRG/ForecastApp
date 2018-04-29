@@ -17,11 +17,11 @@ import Realm
  */
 final class RMWeatherRange: Object {
     @objc dynamic var startingTime: Int = 0 // IMPROVEMENT: Convert to Date. Now it is in UNIX TIME
-    @objc dynamic var temperatureAverage: Float = 0.0
-    @objc dynamic var temperatureMin: Float = 0.0
-    @objc dynamic var temperatureMax: Float = 0.0
-    @objc dynamic var windSpeed: Float = 0.0
-    @objc dynamic var windDegrees: Float = 0.0
+    @objc dynamic var temperatureAverage: Double = 0.0
+    @objc dynamic var temperatureMin: Double = 0.0
+    @objc dynamic var temperatureMax: Double = 0.0
+    @objc dynamic var windSpeed: Double = 0.0
+    @objc dynamic var windDegrees: Double = 0.0
     @objc dynamic var precipitation: Int = 0
     @objc dynamic var weatherIcon: String = ""
 }
