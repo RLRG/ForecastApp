@@ -13,6 +13,7 @@ import SVProgressHUD
 #if ForecastAppLAB
     import FLEX
 #endif
+import Wit
 
 /**
  MainVC
@@ -78,6 +79,13 @@ class MainVC: UIViewController {
             locationManager?.requestWhenInUseAuthorization()
             locationManager?.startUpdatingLocation()
         }
+        
+        // WIT AI config
+        Wit.sharedInstance().delegate = self
+        let screen: CGRect = UIScreen.main.bounds
+        let rect = CGRect(x: (screen.size.width/2 + 100), y:100, width:50, height:50) // IMPROVEMENT: Set up the position for all the possible iPhone/iPad screens appropriately and not this way. This is optimized only for iPhone X for now.
+        let witButton = WITMicButton(frame: rect)
+        self.view.addSubview(witButton)
         
         // Set data source for the tableView
         self.weatherTableView.dataSource = self

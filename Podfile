@@ -23,6 +23,8 @@ pod 'QueryKit'
 pod 'RealmSwift'
 pod 'Realm'
 
+# OTHER
+pod 'Wit'
 
 # -------------- #
 #    TARGETS     #

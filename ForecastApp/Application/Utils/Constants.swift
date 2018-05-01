@@ -21,6 +21,8 @@ struct Constants {
     struct AppInfo {
         /// The main name for the Realm repository.
         static let realmRepoName = "com.CleanArchitectureRxSwift.RealmRepoForWeather"
+        /// WIT AI Access token
+        static let WITAccessToken = "2CS3TKOV7Z4RNOBIZOYRZKZKQUCTIP4W"
     }
     
     /**

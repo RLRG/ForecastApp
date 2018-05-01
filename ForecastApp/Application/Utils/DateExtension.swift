@@ -27,7 +27,7 @@ extension Date {
         
         // Week day
         let f = DateFormatter()
-        let weekDay = f.shortWeekdaySymbols[Calendar.current.component(.weekday, from: start)]
+        let weekDay = f.shortWeekdaySymbols[Calendar.current.component(.weekday, from: start)-1]
         
         // Result
         let startDateString = dateFormatter.string(from: start)

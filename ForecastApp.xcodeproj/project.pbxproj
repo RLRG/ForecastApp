@@ -101,6 +101,8 @@
 		3746186A2095CA7D0008B9C4 /* MainVCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 374618682095CA7D0008B9C4 /* MainVCLocation.swift */; };
 		3746186C2095E72E0008B9C4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746186B2095E72E0008B9C4 /* DateExtension.swift */; };
 		3746186D2095E72E0008B9C4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746186B2095E72E0008B9C4 /* DateExtension.swift */; };
+		3746189D2098EA6D0008B9C4 /* MainVC_WITAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746189C2098EA6D0008B9C4 /* MainVC_WITAI.swift */; };
+		3746189E2098EA6D0008B9C4 /* MainVC_WITAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746189C2098EA6D0008B9C4 /* MainVC_WITAI.swift */; };
 		3F5A5C01D7B6D8E1509A491D /* Pods_ForecastApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D849D04C912B1A02E295C9D5 /* Pods_ForecastApp.framework */; };
 		66686BF5CAAE59F292D01CF9 /* Pods_ForecastAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8A02B444F6EDABA7F6D9EC4 /* Pods_ForecastAppTests.framework */; };
 		919F687560B5393E37CC8CB2 /* Pods_ForecastAppLAB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D190F2767D4BED3C48ACADD0 /* Pods_ForecastAppLAB.framework */; };
@@ -174,6 +176,7 @@
 		3746189420963D670008B9C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		3746189520963D670008B9C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		3746189620963D670008B9C4 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3746189C2098EA6D0008B9C4 /* MainVC_WITAI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC_WITAI.swift; sourceTree = "<group>"; };
 		55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.release.xcconfig"; sourceTree = "<group>"; };
 		5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppLAB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB.debug.xcconfig"; sourceTree = "<group>"; };
 		72416FF5F09C27E2CD9C4605 /* Pods-ForecastAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ForecastAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ForecastAppTests/Pods-ForecastAppTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -494,6 +497,7 @@
 				374618622095340C0008B9C4 /* WeatherRangeCellProtocol.swift */,
 				3746185F209533D60008B9C4 /* WeatherRangeCell.swift */,
 				374618682095CA7D0008B9C4 /* MainVCLocation.swift */,
+				3746189C2098EA6D0008B9C4 /* MainVC_WITAI.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -612,10 +616,14 @@
 				TargetAttributes = {
 					371FF5EA20930B3900B6E896 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 					371FF5FE20930B3A00B6E896 = {
 						CreatedOnToolsVersion = 9.3;
 						TestTargetID = 371FF5EA20930B3900B6E896;
+					};
+					371FF6622093148C00B6E896 = {
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -703,6 +711,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastAppLAB/Pods-ForecastAppLAB-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GCNetworkReachability/GCNetworkReachability.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -712,11 +721,13 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Wit/Wit.framework",
 				"${BUILT_PRODUCTS_DIR}/FLEX/FLEX.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCNetworkReachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -726,6 +737,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLEX.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -759,6 +771,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ForecastApp/Pods-ForecastApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GCNetworkReachability/GCNetworkReachability.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/QueryKit/QueryKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -768,10 +781,12 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwiftExt/RxSwiftExt.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Wit/Wit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCNetworkReachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QueryKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -781,6 +796,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwiftExt.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Wit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -848,6 +864,7 @@
 				371FF64A2093102C00B6E896 /* RunLoopThreadScheduler.swift in Sources */,
 				371FF63E20930FE000B6E896 /* RMLocation.swift in Sources */,
 				371FF65B2093139C00B6E896 /* UseCaseProviderProtocol.swift in Sources */,
+				3746189D2098EA6D0008B9C4 /* MainVC_WITAI.swift in Sources */,
 				371FF6A22093168D00B6E896 /* MainVC.swift in Sources */,
 				371FF62020930D1100B6E896 /* WeatherResult.swift in Sources */,
 				371FF64020930FF000B6E896 /* RMWeatherResult.swift in Sources */,
@@ -905,6 +922,7 @@
 				371FF66E2093148C00B6E896 /* RealmRepresentable.swift in Sources */,
 				371FF66F2093148C00B6E896 /* RunLoopThreadScheduler.swift in Sources */,
 				371FF6702093148C00B6E896 /* RMLocation.swift in Sources */,
+				3746189E2098EA6D0008B9C4 /* MainVC_WITAI.swift in Sources */,
 				371FF6A32093168D00B6E896 /* MainVC.swift in Sources */,
 				371FF6712093148C00B6E896 /* UseCaseProviderProtocol.swift in Sources */,
 				371FF6722093148C00B6E896 /* WeatherResult.swift in Sources */,
@@ -1093,6 +1111,7 @@
 			baseConfigurationReference = C14A462AF2F1CB40642EF05F /* Pods-ForecastApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = "$(SRCROOT)/ForecastApp/Application/Config/PRO/Info_PRO.plist";
@@ -1102,6 +1121,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1112,6 +1133,7 @@
 			baseConfigurationReference = 7255BE87344AA1226F2D4E73 /* Pods-ForecastApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = "$(SRCROOT)/ForecastApp/Application/Config/PRO/Info_PRO.plist";
@@ -1121,6 +1143,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1175,6 +1198,7 @@
 			baseConfigurationReference = 5DDA88B8F40072092B7EA5CB /* Pods-ForecastAppLAB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = "$(SRCROOT)/ForecastApp/Application/Config/LAB/Info_LAB.plist";
@@ -1185,6 +1209,8 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DForecastAppLAB";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastAppLAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1195,6 +1221,7 @@
 			baseConfigurationReference = 55F577B6A661DAFF7794018C /* Pods-ForecastAppLAB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8WFER5UG23;
 				INFOPLIST_FILE = "$(SRCROOT)/ForecastApp/Application/Config/LAB/Info_LAB.plist";
@@ -1205,6 +1232,7 @@
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DForecastAppLAB";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rlrg.ForecastAppLAB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

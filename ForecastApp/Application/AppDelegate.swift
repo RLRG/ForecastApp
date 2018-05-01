@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Wit
 
 /**
  # ForecastApp
@@ -99,6 +100,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
      - Returns: NO if the app cannot handle the URL resource or continue a user activity, otherwise return YES. The return value is ignored if the app is launched as a result of a remote notification.
      */
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        Wit.sharedInstance().accessToken = Constants.AppInfo.WITAccessToken
+        
         window = UIWindow(frame: UIScreen.main.bounds)
         Application.shared.startApp(mainWindow: window!)
         return true
