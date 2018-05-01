@@ -53,6 +53,8 @@ This paragraph includes all the resources used to create this project, including
 | [RxSwift](https://github.com/ReactiveX/RxSwift) | Reactive Programming in Swift used mainly to communicate layers of the app. |
 | [Travis CI](https://travis-ci.org/) | Continuous Integration used to build the project and run unit tests automatically. |
 | [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) | A clean and lightweight progress HUD for your iOS and tvOS app. |
+| [Natural language for developers](https://wit.ai/home) | Users enjoy a hands-free mobile experience while driving, working out, cooking. Developers use Wit to easily build a voice interface for their app. |
+| [WIT AI iOS SDK](https://github.com/wit-ai/wit-ios-sdk) | Wit.ai iOS SDK. |
 | Other | Other frameworks related to the ones already mentioned such as: RxRealm, RxTest, RxSwiftExt, RxAlamofire, ObjectMapper, QueryKit, RealmSwift (see project PodFile) |
 
 ### 2.2. APIs
